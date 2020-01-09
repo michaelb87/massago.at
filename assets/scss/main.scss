@@ -1,0 +1,10 @@
+@import 'bulma/sass/utilities/_all.sass';
+
+// font awesome
+// $fa-font-path: "~font-awesome/fonts";
+// @import "~font-awesome/scss/font-awesome";
+
+$navbar-height: 4.25rem; 
+
+// make sure to import bulma as last line
+@import '~bulma';
