@@ -1,9 +1,9 @@
 <template>
   <div class="site">
     <navbar />
-    <div class="site-content">
+    <section class="section site-content">
       <nuxt />
-    </div>
+    </section>
     <footer-bar />
   </div>
 </template>

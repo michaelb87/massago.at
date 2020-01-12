@@ -2,7 +2,7 @@
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <nuxt-link to="/" class="navbar-item">
+        <nuxt-link to="/" class="navbar-item navbar-logo">
           <logo />
         </nuxt-link>
 
@@ -22,16 +22,16 @@
 
       <div id="navbar" class="navbar-menu" v-bind:class="{'is-active':isActive}">
         <div class="navbar-start">
-          <nuxt-link no-prefetch
+
+        </div>
+        <div class="navbar-end">
+          <nuxt-link no-prefetch exact
             class="navbar-item"
             v-on:click.native="isActive=false"
             v-for="entry in entries"
             :key="entry.text"
             :to="entry.path"
           >{{entry.text}}</nuxt-link>
-        </div>
-
-        <div class="navbar-end">
 
         </div>
       </div>
@@ -49,9 +49,10 @@ export default {
   data() {
     return {
       entries: [
-        { text: "About", path: "/about" },
-        { text: "Soup", path: "/soup" },
-        { text: "Blog", path: "/blog" }
+        { text: "Home", path: "/" },
+        { text: "Massage", path: "/massage" },
+        { text: "Über mich", path: "/andrea" },
+        { text: "Kontakt", path: "/kontakt" },
       ],
       isActive: false
     };

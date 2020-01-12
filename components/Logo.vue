@@ -4,7 +4,7 @@
 <style>
 .massago-logo {
   animation: 1s appear;
-  min-height: 3.25rem;
+  min-height: 3rem;
 }
 
 @keyframes appear {
