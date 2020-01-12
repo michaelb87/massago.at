@@ -3,7 +3,7 @@
     <span @click="openModal" class="pointer-cursor"><slot></slot></span>
     <div class="modal is-active" v-if="isActive">
       <div class="modal-background"></div>
-      <div class="modal-content" v-on-clickaway="deActivate">
+      <div class="modal-content" v-on-clickaway="deActivate" :style="{width: isMobile()? mobileDefault: cwidth}">
         <div class="box">
             <component :is="dynamic" />
 
@@ -14,14 +14,25 @@
   </div>
 </template>
 <script>
-import { mixin as clickaway } from "vue-clickaway";
+import { mixin as clickaway } from "vue-clickaway"
+import MobileHelper from "~/plugins/MobileHelper"
 export default {
-  props: ["component"],
-  mixins: [clickaway],
+  props: {
+      component: {
+          type: String,
+          default: null
+          },
+      cwidth: { // defines modal content width
+          type: String,
+          default: '65%'
+      },
+  },
+  mixins: [clickaway, MobileHelper],
   data: function() {
     return {
       isActive: false,
       dynamic: null,
+      mobileDefault: '95%',
     };
   },
   methods: {

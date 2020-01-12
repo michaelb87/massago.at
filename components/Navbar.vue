@@ -49,7 +49,7 @@ export default {
   data() {
     return {
       entries: [
-        { text: "Home", path: "/" },
+        { text: "Start", path: "/" },
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
         { text: "Kontakt", path: "/kontakt" },

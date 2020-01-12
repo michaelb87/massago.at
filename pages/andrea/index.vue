@@ -70,13 +70,13 @@
                 <p class="has-text-weight-semibold">Aufschulung zur Heilmasseurin</p>
                 <p class="has-text-weight-light">Dr. Kienbacher Ausbildungszentrum, Wien</p>
                 <div>
-                  <span class="tag is-light">
+                  <span class="tag skill is-light">
                     <DynamicComponentModal component="skills/triggerpunkt">Triggerpunkt Therapie</DynamicComponentModal>
                   </span>
-                  <span class="tag is-light">Taping</span>
-                  <span class="tag is-light">Sportmasseurin</span>
-                  <span class="tag is-light">Dorn und Breuss</span>
-                  <span class="tag is-light">Marnitz Therapie</span>
+                  <span class="tag skill is-light">Taping</span>
+                  <span class="tag skill is-light">Sportmasseurin</span>
+                  <span class="tag skill is-light">Dorn und Breuss</span>
+                  <span class="tag skill is-light">Marnitz Therapie</span>
                 </div>
               </div>
             </div>
@@ -90,14 +90,14 @@
                   und Balneotherapie
                 </p>
                 <p class="has-text-weight-light">Dr. Kienbacher Ausbildungszentrum, Wien</p>
-                <p>
-                  <span class="tag is-light">Klassische Massage</span>
-                  <span class="tag is-light">Lymphdrainage</span>
-                  <span class="tag is-light">Fußreflexzonenmassage</span>
-                  <span class="tag is-light">Bindegewebsmassage</span>
-                  <span class="tag is-light">Segmentzonenmassage</span>
-                  <span class="tag is-light">Akupunkturmassage</span>
-                </p>
+                <div>
+                  <span class="tag skill is-light">Klassische Massage</span>
+                  <span class="tag skill is-light">Lymphdrainage</span>
+                  <span class="tag skill is-light">Fußreflexzonenmassage</span>
+                  <span class="tag skill is-light">Bindegewebsmassage</span>
+                  <span class="tag skill is-light">Segmentzonenmassage</span>
+                  <span class="tag skill is-light">Akupunkturmassage</span>
+                </div>
               </div>
             </div>
             <div class="timeline-item">
