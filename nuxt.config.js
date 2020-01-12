@@ -46,12 +46,16 @@ module.exports = {
     //'@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    'nuxt-google-maps-module',
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+  maps: {
+    key: 'AIzaSyBeI4IJiIjiJucrK2UhC_2wvzXWHrH_xzM',
   },
   /*
   ** Build configuration
