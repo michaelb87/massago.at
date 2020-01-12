@@ -13,7 +13,7 @@
           </figure>
         </div>
         <div class="column">
-          <h1 class="title  is-4 is-uppercase">Über mich</h1>
+          <h1 class="title is-4 is-uppercase">Über mich</h1>
 
           <div class="timeline">
             <div class="timeline-item">
@@ -69,13 +69,15 @@
                 <p class="heading">2016-2017</p>
                 <p class="has-text-weight-semibold">Aufschulung zur Heilmasseurin</p>
                 <p class="has-text-weight-light">Dr. Kienbacher Ausbildungszentrum, Wien</p>
-                <p>
-                  <span class="tag is-light">Triggerpunkt Therapie</span>
+                <div>
+                  <span class="tag is-light">
+                    <DynamicComponentModal component="skills/triggerpunkt">Triggerpunkt Therapie</DynamicComponentModal>
+                  </span>
                   <span class="tag is-light">Taping</span>
                   <span class="tag is-light">Sportmasseurin</span>
                   <span class="tag is-light">Dorn und Breuss</span>
                   <span class="tag is-light">Marnitz Therapie</span>
-                </p>
+                </div>
               </div>
             </div>
             <div class="timeline-item">
@@ -116,8 +118,11 @@
 </template>
 
 <script>
+import DynamicComponentModal from "~/components/DynamicComponentModal";
 export default {
-  components: {}
+  components: {
+    DynamicComponentModal
+  }
 };
 </script>
 
