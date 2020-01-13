@@ -2,3 +2,12 @@
   //    padding-top: 1rem;
 }
 
+.page-leave-active{
+  transition: opacity 0.1s;
+}
+.page-enter-active {
+  transition: opacity .3s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}

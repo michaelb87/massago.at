@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h3 class="title is-3">Symptome</h3>
-    <div v-for="sc in symptome_chunks" :key="sc">
+    <div v-for="(sc, index) in symptome_chunks" :key="index">
       <div class="columns symptome is-centered">
         <div
           v-for="s in sc"
