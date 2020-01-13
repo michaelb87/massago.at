@@ -2,12 +2,9 @@
   <div class="container">
     <div class="columns">
       <div class="column">
-        <h3 class="title subtitle is-3">Die Massage [maˈsaːʒə]</h3>
+        <h3 class="title is-4">Heilmassage</h3>
+        <h4 class="subtitle is-4">im Vitalogikum in Aschach and der Steyr</h4>
         <p class="is-size-5">
-          (von frz.
-          <i>masser</i> „massieren“, entstanden zwischen 1755 und 1771 aus arab. 
-          <i>mas</i> „berühren; betasten“ oder aus griech. „kauen, kneten“)
-          dient zur mechanischen Beeinflussung von Haut, Bindegewebe und Muskulatur durch Dehnungs-, Zug- und Druckreiz.
         </p>
       </div>
       <div class="column is-5">
@@ -17,13 +14,22 @@
       </div>
     </div>
 
-    <div></div>
+    <div class="is-divider"></div>
+
+    <div>
+      <div class="is-size-4 has-text-weight-medium">Massage bei Beschwerden wie</div>
+      <p>&nbsp;</p>
+      <symptome v-bind:embedded="true" padding="6%" />
+    </div>
   </div>
 </template>
 
 <script>
+import symptome from '~/pages/symptome/index'
 export default {
-  components: {}
+  components: {
+    symptome
+  }
 };
 </script>
 

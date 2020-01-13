@@ -1,4 +1,7 @@
 <script>
+function concat(...args) {
+  return args.reduce((acc, val) => [...acc, ...val]);
+}
 export default {
   data: () => {
     return {
@@ -48,6 +51,9 @@ export default {
   },
   computed: {
     symptome_chunks: function() {
+      if (this.showMore) {
+      return [concat(this.symptome.slice(0, this.elementsPerRow-1), [{type: 'showMore', id:'', title:''}])]
+      }
       return this.symptome.reduce(
         (acc, _, i) =>
           i % this.elementsPerRow
@@ -58,10 +64,14 @@ export default {
     }
   },
   props: {
-      elementsPerRow: {
-          type: Number,
-          default: 5
-      }
+    elementsPerRow: {
+      type: Number,
+      default: 5
+    },
+    showMore: {
+      type: Boolean,
+      default: true
+    }
   }
 };
 </script>

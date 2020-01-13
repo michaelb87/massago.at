@@ -1,29 +1,39 @@
 .pointer-cursor {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .is-hcentered {
-    margin: auto;
-  }
+  margin: auto;
+}
+
+.is-vertical-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 .reverse-link {
-    color: $dark;
+  color: $dark;
 }
 .reverse-link:hover {
-    color: $info;
+  color: $info;
 }
 
 .m-top-auto {
   margin-top: auto;
 }
+.m-top-bottom-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 
 .disable_text_highlighting {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none; /* Webkit */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE 10  */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none; /* Webkit */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE 10  */
 
-    /* Currently not supported in Opera but will be soon */
-    -o-user-select: none;
-    user-select: none;  
+  /* Currently not supported in Opera but will be soon */
+  -o-user-select: none;
+  user-select: none;
 }
