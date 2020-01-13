@@ -9,7 +9,7 @@
       <div class="columns is-vcentered">
         <div class="column is-3">
           <figure class="image container is-square about-me-img">
-            <img class="is-rounded" src="images/about_me.jpg" alt="&Uuml;ber mich" />
+            <img class="is-rounded" src="~/assets/img/about_me.jpg" alt="&Uuml;ber mich" />
           </figure>
         </div>
         <div class="column">
@@ -84,7 +84,7 @@
       <div class="columns is-vcentered">
         <div class="column is-3">
           <figure class="image container is-square about-me-img">
-            <img class="is-rounded" src="images/klassenraum.jpeg" alt="Klassenraum" />
+            <img class="is-rounded" src="~/assets/img/klassenraum.jpeg" alt="Klassenraum" />
           </figure>
         </div>
         <div class="column is-5">

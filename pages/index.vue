@@ -16,10 +16,13 @@
                   >Vitalogikum</a> im ersten Stock.
           Falls Sie noch nicht hier waren, finden Sie unter <nuxt-link to="/kontakt" >Kontakt</nuxt-link> einen Routenplaner. 
         </p>
+        <p>
+          
+        </p>
       </div>
       <div class="column is-5">
         <figure class="image">
-          <img src="/images/title.jpg" />
+          <img src="~/assets/img/title.jpg" />
         </figure>
       </div>
     </div>

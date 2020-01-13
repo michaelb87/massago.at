@@ -47,6 +47,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     'nuxt-google-maps-module',
+    '@bazzite/nuxt-optimized-images',
   ],
   /*
   ** Axios module configuration
@@ -56,6 +57,9 @@ module.exports = {
   },
   maps: {
     key: 'AIzaSyBeI4IJiIjiJucrK2UhC_2wvzXWHrH_xzM',
+  },
+  optimizedImages: {
+    optimizeImages: true
   },
   /*
   ** Build configuration

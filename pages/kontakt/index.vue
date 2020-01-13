@@ -20,7 +20,7 @@
       </div>
       <div class="column">
         <figure class="image">
-          <img src="/images/vitalogikum.jpg" alt="Vitalogikum Gebäude aussen" />
+          <img src="~/assets/img/vitalogikum.jpg" alt="Vitalogikum Gebäude aussen" />
         </figure>
       </div>
     </div>
