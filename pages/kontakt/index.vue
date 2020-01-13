@@ -24,6 +24,7 @@
         </figure>
       </div>
     </div>
+    <div class="">&nbsp;</div>
     <div class="columns">
       <div class="column">
         <Map></Map>

@@ -1,53 +1,70 @@
 .symptom-box {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    -moz-hyphens: auto;
-    -o-hyphens: auto;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-  }
-  
-  .symptom-img {
-    border-radius: 35px;
-  }
-
-  @media (max-width: 768px) {
-    .card-image {
-        padding-left: 15% !important;
-        padding-right: 15% !important;
-      }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  -moz-hyphens: auto;
+  -o-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
-  .symptom-overlay{
-      opacity: 0;
-      border-radius: 35px;
-  }
+.symptom-img {
+  border-radius: 35px;
+}
 
-  .symptom-overlay:hover {
-      opacity: 40%;
-      background-color: $black;
-      color: $white;
+@media (max-width: 768px) {
+  .card-image {
+    padding-left: 15% !important;
+    padding-right: 15% !important;
   }
-  .symptom-overlay-txt {
-    padding-top: 3em;
+}
+
+.symptom-overlay {
+  opacity: 0;
+  border-radius: 35px;
+}
+
+.symptom-overlay:hover {
+  opacity: 40%;
+  background-color: $black;
+  color: $white;
+}
+.symptom-overlay-txt {
+  padding-top: 3em;
+}
+
+.symptome .card {
+  box-shadow: none;
+  text-align: center;
+}
+
+.symptome .card-content {
+  padding: 0.4rem !important;
+}
+
+.symptom-title {
+  font-weight: 500;
+  color: $dark;
+  font-size: 1.25em;
+}
+.symptom-title:hover {
+  color: $blue !important;
+}
+
+@media (max-width: 768px) {
+    .sfloating-img{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 1rem;
+    }
   }
   
-  .symptome .card{
-    box-shadow: none;
-    text-align: center;
+@media (min-width: 768px) {
+  .sfloating-img {
+    float: right;
+    width: 250px;
+    height: 187px;
   }
-  
-  .symptome .card-content{
-    padding: 0.4rem !important;
-  }
-  
-  .symptom-title {
-    font-weight: 500;
-    color: $dark;
-    font-size: 1.25em;
-  }
-  .symptom-title:hover {
-    color: $blue !important;
-  }
+}
+
