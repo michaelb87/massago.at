@@ -1,5 +1,9 @@
 <template>
   <div class="site">
+    <!-- <div class="pre-head has-text-centered has-background-grey-lighter"><span>
+      Heilmassage Andrea Orlovits  -  Saaßstraße 66 - 4421 Aschach / Steyr
+      </span>
+      </div> -->
     <navbar />
     <section class="section site-content">
       <nuxt />

@@ -4,21 +4,22 @@
       <p>
         <strong>massago.at</strong>
         &copy; 2019 - {{currYear}}
-        <a href="/andrea">Andrea Orlovits</a>
+        <nuxt-link no-prefetch to="/andrea" class="reverse-link">Andrea Orlovits</nuxt-link>
+     
       </p>
       <p>
-        <span>Vitalogikum, Saaßstraße 66, 4421 Aschach an der Steyr</span>
+        <nuxt-link no-prefetch to="/kontakt" class="reverse-link">Vitalogikum, Saaßstraße 66, 4421 Aschach an der Steyr</nuxt-link>
       </p>
       <p>
         <span>
           Tel.:
-          <a href="tel:06776-3153-743">06776 3153 743</a>
+          <a href="tel:06776-3153-743" >06776 3153 743</a>
         </span>
-        <span class="hdivider"></span>
+        <!-- <span class="hdivider"></span>
         <span>
           E-mail:
           <a href="mailto:andreaorlovits@gmail.com">andreaorlovits@gmail.com</a>
-        </span>
+        </span> -->
       </p>
     </div>
   </footer>

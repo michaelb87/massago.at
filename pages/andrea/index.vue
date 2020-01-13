@@ -13,7 +13,7 @@
           </figure>
         </div>
         <div class="column">
-          <h1 class="title is-4 is-uppercase">Über mich</h1>
+          <h1 class="title is-4 is-uppercase">Beruflicher werdegang</h1>
 
           <div class="timeline">
             <div class="timeline-item">
@@ -23,7 +23,13 @@
                 <p
                   class="has-text-weight-semibold"
                 >Selbständige Heilmasseurin und Gewerbliche Masseurin</p>
-                <p class="has-text-weight-light"><a href="http://www.vitalogikum.at" target="blank" class="has-text-dark timeline-link">Vitalogikum</a>, Aschach an der Steyr</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="http://www.vitalogikum.at"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Vitalogikum</a>, Aschach an der Steyr
+                </p>
               </div>
             </div>
             <div class="timeline-item">
@@ -31,7 +37,13 @@
               <div class="timeline-content">
                 <p class="heading">2018 - 2019</p>
                 <p class="has-text-weight-semibold">Heilmasseurin</p>
-                <p class="has-text-weight-light"><a href="https://dr-hinz.at/" target="blank" class="has-text-dark timeline-link">Ordination Dr. Hinz</a>, Facharzt für Orthopädie, Linz</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="https://dr-hinz.at/"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Ordination Dr. Hinz</a>, Facharzt für Orthopädie, Linz
+                </p>
               </div>
             </div>
             <div class="timeline-item">
@@ -40,7 +52,11 @@
                 <p class="heading">2016 - 2018</p>
                 <p class="has-text-weight-semibold">Medizinische Masseurin/Heilmasseurin</p>
                 <p class="has-text-weight-light">
-                    <a href="https://www.privatklinik-doebling.at/de/medizinische-leistungen/physikalische-medizin-und-rehabilitation.html" target="blank" class="has-text-dark timeline-link">Privatklinik Döbling</a>,
+                  <a
+                    href="https://www.privatklinik-doebling.at/de/medizinische-leistungen/physikalische-medizin-und-rehabilitation.html"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Privatklinik Döbling</a>,
                   Institut für Physikalische
                   Medizin und Rehabilitation,
                   Wien
@@ -52,14 +68,25 @@
               <div class="timeline-content">
                 <p class="heading">2012-2015</p>
                 <p class="has-text-weight-semibold">Diplomierte Gesundheits- und Krankenschwester</p>
-                <p class="has-text-weight-light"><a href="https://www.privatklinik-doebling.at" target="blank" class="has-text-dark timeline-link">Privatklinik Döbling</a>, Wien</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="https://www.privatklinik-doebling.at"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Privatklinik Döbling</a>, Wien
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- QUALIFIKATIONEN -->
-      <div class="columns">
+      <div class="columns is-vcentered">
+        <div class="column is-3">
+          <figure class="image container is-square about-me-img">
+            <img class="is-rounded" src="images/klassenraum.jpeg" alt="Klassenraum" />
+          </figure>
+        </div>
         <div class="column is-5">
           <h1 class="title is-4 is-uppercase">Qualifikationen</h1>
 
@@ -69,7 +96,13 @@
               <div class="timeline-content">
                 <p class="heading">2016-2017</p>
                 <p class="has-text-weight-semibold">Aufschulung zur Heilmasseurin</p>
-                <p class="has-text-weight-light"><a href="http://schulungszentrum.or.at" target="blank" class="has-text-dark timeline-link">Dr. Kienbacher Ausbildungszentrum</a>, Wien</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="http://schulungszentrum.or.at"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Dr. Kienbacher Ausbildungszentrum</a>, Wien
+                </p>
                 <div>
                   <span class="tag skill is-light">
                     <DynamicComponentModal component="skills/triggerpunkt">Triggerpunkt Therapie</DynamicComponentModal>
@@ -90,7 +123,13 @@
                   Elektrotherapie, Hydro-
                   und Balneotherapie
                 </p>
-                <p class="has-text-weight-light"><a href="http://schulungszentrum.or.at" target="blank" class="has-text-dark timeline-link">Dr. Kienbacher Ausbildungszentrum</a>, Wien</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="http://schulungszentrum.or.at"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Dr. Kienbacher Ausbildungszentrum</a>, Wien
+                </p>
                 <div>
                   <span class="tag skill is-light">Klassische Massage</span>
                   <span class="tag skill is-light">Lymphdrainage</span>
@@ -108,7 +147,13 @@
                 <p
                   class="has-text-weight-semibold"
                 >Schule für allgemeine Gesundheits-und Krankenpflege</p>
-                <p class="has-text-weight-light"><a href="http://www.wienkav.at/kav/wil/" target="blank" class="has-text-dark timeline-link">Wilhelminenspital</a>, Wien</p>
+                <p class="has-text-weight-light">
+                  <a
+                    href="http://www.wienkav.at/kav/wil/"
+                    target="blank"
+                    class="has-text-dark timeline-link"
+                  >Wilhelminenspital</a>, Wien
+                </p>
               </div>
             </div>
           </div>
@@ -132,6 +177,6 @@ export default {
   padding-bottom: 0.5em !important;
 }
 .timeline-link:hover {
-    font-weight: 500;
+  font-weight: 500;
 }
 </style>

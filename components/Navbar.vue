@@ -52,6 +52,7 @@ export default {
         { text: "Start", path: "/" },
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
+        { text: "Kassen", path: "/kassen" },
         { text: "Kontakt", path: "/kontakt" },
       ],
       isActive: false
