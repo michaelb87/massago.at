@@ -1,5 +1,5 @@
 <template>
-  <div class="container content section">
+  <div class="content section">
     <div class="columns has-text-justified">
       <div class="column is-2 is-hidden-mobile"></div>
       <div class="column">

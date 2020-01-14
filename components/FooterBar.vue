@@ -13,7 +13,7 @@
       <p class="footer-elem">
         <span>
           Tel.:
-          <a href="tel:06776-3153-743" >06776 3153 743</a>
+          <a href="tel:06776-3153-743">06776 3153 743</a>
         </span>
         <!-- <span class="hdivider"></span>
         <span>
@@ -22,7 +22,7 @@
         </span> -->
       </p>
       <p class="footer-elem">
-        <span>Impressum</span> | 
+        <nuxt-link no-prefetch to="/impressum" class="">Impressum</nuxt-link> | 
         <a href="https://www.facebook.com/massago.at" target="blank">Facebook</a>
         </p>
     </div>

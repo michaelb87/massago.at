@@ -1,5 +1,5 @@
 <template>
-  <div class="container content section">
+  <div class="content section">
     <div class="columns has-text-justified">
       <div class="column is-2 is-hidden-mobile"></div>
       <div class="column">
@@ -11,9 +11,11 @@
         </div>
         <p>
           Der Rücken lässt sich anatomisch in die
-          <strong>Halswirbelsäule</strong> (siehe
+          <i>Halswirbelsäule</i> (siehe
           <nuxt-link no-prefetch to="/symptome/cervikalsyndrom">Cervikalsyndrom</nuxt-link>),
-          <strong>Brustwirbelsäule</strong> und Lendenwirbelsäule (siehe Lumbalgie) einteilen.
+          <i>Brustwirbelsäule</i> und
+          <i>Lendenwirbelsäule</i> (siehe
+          <nuxt-link no-prefetch to="/symptome/lumbalgie">Lumbalgie</nuxt-link>) einteilen.
         </p>
 
         <p>
