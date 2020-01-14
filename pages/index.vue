@@ -34,14 +34,20 @@
       <p>&nbsp;</p>
       <symptome v-bind:embedded="true" padding="12%" v-bind:showMore="true" :elementsPerRow="5" />
     </div>
+
+    <div class="is-divider"></div>
+
+    <Newsletter />
   </div>
 </template>
 
 <script>
 import symptome from '~/pages/symptome/index'
+import Newsletter from '~/components/Newsletter'
 export default {
   components: {
-    symptome
+    symptome,
+    Newsletter
   }
 };
 </script>

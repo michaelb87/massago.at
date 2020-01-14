@@ -42,8 +42,6 @@ export default {
       };
 
       directionsService.route(request, (result, status) => {
-        console.log(">>", status, result);
-        console.log(result);
         if (status == "OK") {
           this.errorMsg = null;
           this.routeLocation = result.routes[0].legs[0].start_address;

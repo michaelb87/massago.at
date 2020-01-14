@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.is-vcenter {
+  display: flex;
+  align-items: center;
+}
+
 .reverse-link {
   color: $dark;
 }
