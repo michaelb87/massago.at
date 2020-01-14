@@ -32,7 +32,7 @@
     <div>
       <div class="is-size-4 has-text-weight-medium">Massage bei Beschwerden wie</div>
       <p>&nbsp;</p>
-      <symptome v-bind:embedded="true" padding="8%" v-bind:showMore="true" :elementsPerRow="5" />
+      <symptome v-bind:embedded="true" padding="12%" v-bind:showMore="true" :elementsPerRow="5" />
     </div>
   </div>
 </template>
