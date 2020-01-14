@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="columns has-text-justified">
+    <div class="columns has-text-justified content">
       <div class="column is-2 is-hidden-mobile"></div>
       <div class="column">
         <h4 class="title is-4 center-on-mobile">Kopfschmerzen</h4>
