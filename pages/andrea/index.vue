@@ -105,9 +105,9 @@
                 </p>
                 <div>
                   <span class="tag skill is-light">
-                    <DynamicComponentModal component="skills/triggerpunkt">Triggerpunkt Therapie</DynamicComponentModal>
+                    <nuxt-link no-prefetch to="/therapien/triggerpunkt">Triggerpunkt Therapie</nuxt-link>
                   </span>
-                  <span class="tag skill is-light">Taping</span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/taping">Taping</nuxt-link></span>
                   <span class="tag skill is-light">Sportmasseurin</span>
                   <span class="tag skill is-light">Dorn und Breuss</span>
                   <span class="tag skill is-light">Marnitz Therapie</span>
@@ -131,11 +131,11 @@
                   >Dr. Kienbacher Ausbildungszentrum</a>, Wien
                 </p>
                 <div>
-                  <span class="tag skill is-light">Klassische Massage</span>
-                  <span class="tag skill is-light">Lymphdrainage</span>
-                  <span class="tag skill is-light">Fußreflexzonenmassage</span>
-                  <span class="tag skill is-light">Bindegewebsmassage</span>
-                  <span class="tag skill is-light">Segmentzonenmassage</span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/klassische_massage">Klassische Massage</nuxt-link></span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/lymphdrainage">Lymphdrainage</nuxt-link></span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/fussreflexzonenmassage">Fußreflexzonenmassage</nuxt-link></span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/triggerpunkt">Bindegewebsmassage</nuxt-link></span>
+                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/triggerpunkt">Segmentzonenmassage</nuxt-link></span>
                   <span class="tag skill is-light">Akupunkturmassage</span>
                 </div>
               </div>

@@ -10,14 +10,40 @@
           </figure>
         </div>
         <p>
-          Symptome für ein Cervikalsyndrom sind
-          <i>Kopfschmerzen, Schwindel, Tinnitus, Schmerzen</i> und
-          <i>Bewegungseinschränkung</i> in der Halswirbelsäule
+          Das
+          <i>Cervicalsyndrom</i> ist ein Sammelbegriff für alle von der
+          <strong>Halswirbelsäule ausgehenden Beschwerden</strong>.
+          Diese können entweder im Bereich der Halswirbelsäule selbst sein oder sich als
+          <strong>Ausstrahlung im Kopfbereich</strong>,
+          oder in den oberen Extremitäten (Schulter, Arme, Hände) manifestieren.
         </p>
-        <p><u>Unteres Cervikalsyndrom</u></p>
-        <p>Symptome: Nacken-, Schulter-, Arm-, und Handschmerzen, sensible Störungen (Taubheitsgefühl/Kribbeln in Fingern und Hand), motorische Störungen (Muskelschwäche, Lähmungen), Bewegungseinschränkung in der Halswirbelsäule</p>
+        <p>
+          Die Ursache ist meist eine muskuläre Über-und Fehlbelastung. Arthrosen, Schleudertrauma, Bandscheibenvorfälle und Blockierungen in
+          der Halswirbelsäule können weitere Ursachen sein.
+        </p>
+        <p>
+          Es wird zwischen zwei Arten unterschieden.
+          <br />Die folgenden Symptome sind bei jeden Menschen unterschiedlich Ausgeprägt bzw manche gar nicht vorhanden.
+        </p>
+        <p>
+          <div class="bullet">Oberes Cervikalsyndrom</div>
+          <div>Symptome: Kopfschmerzen, Schwindel, Tinnitus, Schmerzen und Bewegungseinschränkung in der Halswirbelsäule.</div>
+        </p>
+        <p>
+          <div class="bullet">Unteres Cervikalsyndrom</div>
+          <div>Symptome: Nacken-, Schulter-, Arm-, und Handschmerzen, sensible Störungen (Taubheitsgefühl/Kribbeln in Fingern und Hand), motorische Störungen (Muskelschwäche, Lähmungen), Bewegungseinschränkung in der Halswirbelsäule.</div>
+        </p>
       </div>
       <div class="column is-2 is-hidden-mobile"></div>
     </div>
   </div>
 </template>
+
+<style scoped>
+  .bullet {
+    display: list-item;
+    font-weight: 600;
+    margin-left: 1.3em;
+    
+  }
+</style>

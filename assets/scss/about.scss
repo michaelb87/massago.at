@@ -1,5 +1,12 @@
+.skill a{
+    color: $dark;
+}
 .skill:hover {
     background-color: $white !important;
-    color: $blue !important;
     cursor: default;
+}
+
+.skill:hover > a {
+    color: $blue !important;
+    cursor: pointer;
 }

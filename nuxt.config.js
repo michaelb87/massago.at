@@ -70,6 +70,7 @@ module.exports = {
       '/admin/**',
       '/symptome',
       '/therapien',
+      '/impressum',
     ],
     routes: [
       '/symptome/rueckenschmerzen',
