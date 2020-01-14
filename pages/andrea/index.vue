@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container section">
     <div class="column">
       <h1 class="title">Andrea Orlovits</h1>
       <h2 class="subtitle">Heilmasseurin</h2>

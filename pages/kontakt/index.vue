@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container section">
     <div class="columns is-vcentered">
       <div class="column">
         <p class="is-size-3">Vitalogikum</p>

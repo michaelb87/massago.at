@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container section">
     <div class="columns">
       <div class="column is-6 is-size-5 is-size-6-mobile">
         <h3 class="title is-4">Herzlich Willkommen</h3>

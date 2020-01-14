@@ -21,6 +21,10 @@
           <a href="mailto:andreaorlovits@gmail.com">andreaorlovits@gmail.com</a>
         </span> -->
       </p>
+      <p class="footer-elem">
+        <span>Impressum</span> | 
+        <a href="https://www.facebook.com/massago.at" target="blank">Facebook</a>
+        </p>
     </div>
   </footer>
 </template>

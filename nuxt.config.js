@@ -48,6 +48,7 @@ module.exports = {
     '@nuxtjs/axios',
     'nuxt-google-maps-module',
     '@bazzite/nuxt-optimized-images',
+    '@nuxtjs/sitemap',
   ],
   /*
   ** Axios module configuration
@@ -60,6 +61,36 @@ module.exports = {
   },
   optimizedImages: {
     optimizeImages: true
+  },
+  sitemap: {
+    hostname: 'https://www.massago.at',
+    gzip: true,
+    exclude: [
+      '/secret',
+      '/admin/**',
+      '/symptome',
+      '/therapien',
+    ],
+    routes: [
+      '/symptome/rueckenschmerzen',
+      '/symptome/haltungsbedingte_verspannungen',
+      '/symptome/kopfschmerzen',
+      '/symptome/schwindel',
+      '/symptome/lymphoedem',
+      '/symptome/belastung',
+      '/symptome/stress',
+      '/symptome/cervikalsyndrom',
+      '/symptome/lumbalgie',
+      '/symptome/skoliose',
+      '/therapien/klassische_massage',
+      '/therapien/lymphdrainage',
+      '/therapien/fussreflexzonen',
+      '/therapien/triggerpunkt',
+      '/therapien/schroepfen',
+      '/therapien/taping',
+      '/therapien/bindegewebsmassage',
+      '/therapien/segmentzonen',
+    ]
   },
   /*
   ** Build configuration

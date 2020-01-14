@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container section">
         <h1 class="title is-3">Therapien</h1>
         <div v-for="t in therapien" :key="t.id">
-            {{t.title}}
+            <nuxt-link no-prefetch :to="`/therapien/${t.id}`">{{t.title}}</nuxt-link>
             
         </div>
     </div>

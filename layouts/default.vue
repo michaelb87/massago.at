@@ -5,7 +5,7 @@
       </span>
       </div> -->
     <navbar />
-    <section class="section site-content">
+    <section class="site-content">
       <nuxt />
     </section>
     <footer-bar />

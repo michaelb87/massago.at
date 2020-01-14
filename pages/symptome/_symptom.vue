@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container section">
       <component :is="dynamic" />
   </div>
 </template>
