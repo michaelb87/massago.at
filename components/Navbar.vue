@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="container">
+    <div class="container disable_text_highlighting">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item navbar-logo">
           <logo />
@@ -21,18 +21,17 @@
       </div>
 
       <div id="navbar" class="navbar-menu" v-bind:class="{'is-active':isActive}">
-        <div class="navbar-start">
-
-        </div>
+        <div class="navbar-start"></div>
         <div class="navbar-end">
-          <nuxt-link no-prefetch exact
+          <nuxt-link
+            no-prefetch
+            exact
             class="navbar-item"
             v-on:click.native="isActive=false"
             v-for="entry in entries"
             :key="entry.text"
             :to="entry.path"
-          >{{entry.text}}</nuxt-link>
-
+          >{{isMobile && entry.mobileText ? entry.mobileText : entry.text}}</nuxt-link>
         </div>
       </div>
     </div>
@@ -41,7 +40,8 @@
 
 <script>
 import Logo from "~/components/Logo.vue";
-import colors from 'bulma/sass/utilities/_all.sass';
+import colors from "bulma/sass/utilities/_all.sass";
+import MobileHelper from "~/mixins/MobileHelper";
 export default {
   components: {
     Logo
@@ -52,17 +52,18 @@ export default {
         { text: "Start", path: "/" },
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
-        { text: "Kassen", path: "/kassen" },
-        { text: "Kontakt", path: "/kontakt" },
+        { text: "Kassen", mobileText: "Kassen / Preise", path: "/kassen" },
+        { text: "Kontakt", path: "/kontakt" }
       ],
-      isActive: false
+      isActive: false,
     };
-  }
+  },
+  mixins: [MobileHelper]
 };
 </script>
 
 <style scoped>
 .nuxt-link-active {
-    color: #3273dc !important;
+  color: #3273dc !important;
 }
 </style>

@@ -8,7 +8,7 @@
       <div
         class="modal-content"
         v-on-clickaway="deActivate"
-        :style="{width: isMobile()? mobileDefault: cwidth}"
+        :style="{width: isMobile ? mobileDefault: cwidth}"
       >
         <div class="box">
           <div class="content">

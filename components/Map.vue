@@ -76,7 +76,7 @@ export default {
         zoom: 13,
         zoomControl: true,
         scaleControl: true,
-        scrollwheel: this.isMobile()? false: true,
+        scrollwheel: this.isMobile ? false: true,
         disableDoubleClickZoom: false,
         mapTypeControlOptions: { mapTypeIds: [] },
         streetViewControl: false,

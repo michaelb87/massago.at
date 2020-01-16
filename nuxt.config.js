@@ -33,7 +33,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/route'
+    '~/plugins/route',
+    '~/plugins/hotjar',
   ],
   /*
   ** Nuxt.js dev-modules
@@ -53,10 +54,6 @@ module.exports = {
     'nuxt-google-maps-module',
     '@bazzite/nuxt-optimized-images',
     '@nuxtjs/sitemap',
-    // '@netsells/nuxt-hotjar', { 
-    //   id: process.env.HOTJAR_HJID, 
-    //   sv: process.env.HOTJAR_HJSV,
-    // }
   ],
   /*
   ** Axios module configuration
