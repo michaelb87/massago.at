@@ -1,8 +1,9 @@
 @import 'bulma/sass/utilities/_all.sass';
 
 // font awesome
-// $fa-font-path: "~font-awesome/fonts";
-// @import "~font-awesome/scss/font-awesome";
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";
+
 @import 'layout.scss';
 @import 'mobile.scss';
 @import 'helpers.scss';

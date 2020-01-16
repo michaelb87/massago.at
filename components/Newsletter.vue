@@ -18,7 +18,7 @@
             type="email"
             name="EMAIL"
             class="input"
-            placeholder="eIhre Email Addresse"
+            placeholder="Ihre Email Addresse"
             required
           />
         </div>
@@ -34,7 +34,7 @@
       </div>
       <div class="columns is-centered">
           <div class="column is-6 is-paddingless">
-          <div class="has-text-centered">Erhalten Sie Massage Angebote und Vergünstigungen via E-Mail</div>
+          <div class="has-text-centered">Erhalten Sie exklusive Massage Angebote und Vergünstigungen via E-Mail</div>
           </div>
       </div>
         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

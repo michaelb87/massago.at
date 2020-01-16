@@ -24,10 +24,16 @@
         </figure>
       </div>
     </div>
-    <div class="">&nbsp;</div>
+    <div class>&nbsp;</div>
     <div class="columns">
       <div class="column">
         <Map></Map>
+      </div>
+    </div>
+    <div class>&nbsp;</div>
+    <div class="columns">
+      <div class="column is-offset-4 is-4">
+        <Callback />
       </div>
     </div>
   </div>
@@ -35,9 +41,12 @@
 
 <script>
 import Map from "~/components/Map";
+import Callback from "~/components/Callback";
+
 export default {
   components: {
-    Map
+    Map,
+    Callback
   }
 };
 </script>
