@@ -1,3 +1,4 @@
+require('dotenv').config()
 
 module.exports = {
   mode: 'universal',
@@ -5,7 +6,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || 'Heilmassage Andrea Orlovits',
+    title: 'Heilmassage Massago',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -59,7 +60,7 @@ module.exports = {
   axios: {
   },
   maps: {
-    key: 'AIzaSyBeI4IJiIjiJucrK2UhC_2wvzXWHrH_xzM',
+    key: process.env.GOOGLE_MAPS_KEY,
   },
   optimizedImages: {
     optimizeImages: true

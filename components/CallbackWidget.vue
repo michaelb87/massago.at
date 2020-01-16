@@ -25,7 +25,7 @@ export default {
       function() {
         this.show = true;
       }.bind(this),
-      1 * 1000
+      40 * 1000
     );
   }
 };
