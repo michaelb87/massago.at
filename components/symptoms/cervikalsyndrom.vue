@@ -1,7 +1,5 @@
 <template>
-  <div class="content section">
-    <div class="columns has-text-justified">
-      <div class="column is-2 is-hidden-mobile"></div>
+
       <div class="column">
         <h4 class="title is-4 center-on-mobile">Cervikalsyndrom</h4>
         <div class="sfloating-img">
@@ -25,18 +23,16 @@
           Es wird zwischen zwei Arten unterschieden.
           <br />Die folgenden Symptome sind bei jeden Menschen unterschiedlich Ausgeprägt bzw manche gar nicht vorhanden.
         </p>
-        <p>
+        <div>
           <div class="bullet">Oberes Cervikalsyndrom</div>
           <div>Symptome: Kopfschmerzen, Schwindel, Tinnitus, Schmerzen und Bewegungseinschränkung in der Halswirbelsäule.</div>
-        </p>
-        <p>
+        </div>
+        <div>
           <div class="bullet">Unteres Cervikalsyndrom</div>
           <div>Symptome: Nacken-, Schulter-, Arm-, und Handschmerzen, sensible Störungen (Taubheitsgefühl/Kribbeln in Fingern und Hand), motorische Störungen (Muskelschwäche, Lähmungen), Bewegungseinschränkung in der Halswirbelsäule.</div>
-        </p>
+        </div>
       </div>
-      <div class="column is-2 is-hidden-mobile"></div>
-    </div>
-  </div>
+      
 </template>
 
 <style scoped>

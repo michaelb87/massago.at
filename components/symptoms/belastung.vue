@@ -1,7 +1,7 @@
 <template>
   <div class="content section">
-    <div class="columns has-text-justified">
-      <div class="column is-2 is-hidden-mobile"></div>
+    
+      
       <div class="column">
         <h4 class="title is-4 center-on-mobile">Über- und Fehlbelastung</h4>
         <div class="sfloating-img">
@@ -45,7 +45,6 @@
           <nuxt-link no-prefetch to="/symptome/schwindel">Schwindel</nuxt-link> führen.
         </p>
       </div>
-      <div class="column is-2 is-hidden-mobile"></div>
-    </div>
+      
   </div>
 </template>

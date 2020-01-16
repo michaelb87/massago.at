@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="section">
-      <div class="columns has-text-justified">
+      
         <div class="column is-2 is-hidden-mobile"></div>
         <component :is="dynamic" class="column" />
         <div class="column is-2 is-hidden-mobile"></div>
