@@ -179,4 +179,8 @@ export default {
 .timeline-link:hover {
   font-weight: 500;
 }
+.timeline-item:hover .timeline-marker{
+  background-color: hsl(171, 100%, 41%)!important;
+  animation: 0.6s appear;
+}
 </style>
