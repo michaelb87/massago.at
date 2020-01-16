@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <div >
+          <div>
             <h1 class="title">Heilmassage</h1>
           </div>
           <div>
@@ -24,15 +24,12 @@
         </div>
       </div>
     </section>
+    <div>
+      <therapien />
+    </div>
     <div class="section container">
-      <div class>
-        <symptome v-bind:embedded="false" padding="7%" v-bind:showMore="false" :elementsPerRow="5" />
-      </div>
-
-      <div class="is-divider"></div>
-
       <div>
-        <therapien />
+        <symptome v-bind:embedded="false" padding="7%" v-bind:showMore="false" :elementsPerRow="5" />
       </div>
     </div>
   </div>

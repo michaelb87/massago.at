@@ -31,7 +31,7 @@
   color: $white;
 }
 .symptom-overlay-txt {
-  padding-top: 3em;
+  width: 100%;
 }
 
 .symptome .card {
@@ -54,8 +54,8 @@
 
 @media (max-width: 768px) {
     .sfloating-img{
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-bottom: 1rem;
     }
   }

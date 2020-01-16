@@ -3,7 +3,7 @@
     <h4 class="title is-4 center-on-mobile">Schwindel</h4>
     <div class="sfloating-img">
       <figure class="image">
-        <img src="/images/symptome/haltungsbedingte_verspannungen.jpg" />
+        <img src="/images/symptome/schwindel.jpg" />
       </figure>
     </div>
     <p>Der Gleichgewichtssinn ist ein Zusammenspiel aus mehreren Strukturen.</p>

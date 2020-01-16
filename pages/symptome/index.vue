@@ -23,8 +23,8 @@
               <figure class="image is-4by3" v-if="s.type!=='showMore'">
                 <nuxt-link :to="`/symptome/${s.id}`" class="symptom-title">
                   <img class="symptom-img" :src="getImgUrl(s.id)" :alt="s.title" />
-                  <div class="is-overlay symptom-overlay symptom-overlay-txt">
-                    <div>mehr Informationen</div>
+                  <div class="is-overlay symptom-overlay is-vcenter">
+                    <div class="symptom-overlay-txt has-text-centered">mehr Informationen</div>
                   </div>
                 </nuxt-link>
               </figure>
