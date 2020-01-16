@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import MobileHelper from "~/plugins/MobileHelper";
+import MobileHelper from "~/mixins/MobileHelper";
 
 const vitalogikum = {
   lat: 48.02282,

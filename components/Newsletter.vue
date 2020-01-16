@@ -1,5 +1,5 @@
 <template>
-  <div class="newsletter-container ">
+  <div class="newsletter-container">
     <form
       action="https://massago.us4.list-manage.com/subscribe/post?u=2c09f32cd6bb582de6d9a5c36&amp;id=edd5cc89eb"
       method="post"
@@ -28,7 +28,7 @@
             value="Anmelden"
             name="subscribe"
             id="mc-embedded-subscribe"
-            class="button"
+            class="button is-primary is-inverted is-outlined"
           />
         </div>
       </div>
@@ -45,7 +45,4 @@
   </div>
 </template>
 <style scoped>
-    .newsletter-container{
-        padding-bottom: 6px;
-    }
 </style>

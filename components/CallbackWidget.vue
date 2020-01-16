@@ -6,7 +6,7 @@
         <div class="cbw-info has-text-centered">Rückruf vereinbaren</div>
       </div>
     </DynamicComponentModal>
-    <div class="fa fa-times-circle cbw-close" v-on:click="show=false"></div>
+    <div class="fa fa-times-circle cbw-close" v-on:click="show=false" role="button"></div>
   </div>
 </template>
 

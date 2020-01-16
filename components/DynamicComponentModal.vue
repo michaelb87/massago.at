@@ -22,7 +22,7 @@
 </template>
 <script>
 import { mixin as clickaway } from "vue-clickaway";
-import MobileHelper from "~/plugins/MobileHelper";
+import MobileHelper from "~/mixins/MobileHelper";
 export default {
   props: {
     component: {
