@@ -2,6 +2,10 @@
 
 > Heilmassage Andrea Orlovits
 
+http://www.massago.at
+
+Go live date is planned for January 19, 2020 
+
 ## Build Setup
 
 ``` bash
@@ -18,5 +22,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
