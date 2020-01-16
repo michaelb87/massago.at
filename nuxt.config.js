@@ -121,7 +121,7 @@ module.exports = {
   serverMiddleware: [
     {
       path: 'api/callback',
-      handler: '~/api/callback.js'
+      handler: '~/server/api/callback.js'
     }
   ]
 }
