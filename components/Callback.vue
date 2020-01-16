@@ -1,7 +1,7 @@
 <template>
   <div>
-      <h4 class="title is-4">Rückruf Service</h4>
-      <p>Lassen Sie sich ganz einfach von mir zurückrufen.</p>
+    <h4 class="title is-4">Rückruf Service</h4>
+    <p>Lassen Sie sich ganz einfach von mir zurückrufen.</p>
     <form @submit="send">
       <div id="callback-form" v-if="!msgSent">
         <div class="field is-horizontal">
@@ -76,12 +76,14 @@
         </div>
       </div>
       <div class="content" v-if="msgSent">
-        <h4 class="title is-4">Nachricht gesendet!</h4>
-        <p>Ich rufe sie {{selected_text}} zurück.</p>
-        <p v-if="note.length > 0">
-          <strong>Ihre Nachricht:</strong>
-          {{note}}
-        </p>
+        <div class="notification is-success">
+          <h4 class="title is-4">Nachricht gesendet!</h4>
+          <p>Ich rufe sie {{selected_text}} zurück.</p>
+          <p v-if="note.length > 0">
+            <strong>Ihre Nachricht:</strong>
+            {{note}}
+          </p>
+        </div>
       </div>
     </form>
     <div>&nbsp;</div>

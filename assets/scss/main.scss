@@ -5,12 +5,14 @@ $fa-font-path: "~font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome";
 
 @import 'layout.scss';
+@import 'animations.scss';
 @import 'mobile.scss';
 @import 'helpers.scss';
 
 @import 'about.scss';
 @import 'symptome.scss';
 @import 'callback.scss';
+
 
 $navbar-height: 4.25rem; 
 

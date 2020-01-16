@@ -7,7 +7,12 @@
   background-color: $info;
   color: $white-ter;
   border-radius: 50%;
+
+  animation: 1s appear;
+  min-height: 3rem;
 }
+
+
 .cbw-container:hover {
   background-color: $light;
   color: $dark;
@@ -36,6 +41,7 @@
   left: -16rem;
   top: 0.5rem;
   padding-top: 0.25rem;
+  animation: 1s fadeInRight;
 }
 
 .cbw-close {
@@ -47,10 +53,12 @@
   border-radius: 50%;
   color: $dark;
   font-size: 1.5rem;
-  z-index: 999;
+  z-index: 9;
+  animation: 1s appear;
 }
 
-.cbw-close:hover{
-    color: $red;
-    cursor: pointer;
+.cbw-close:hover {
+  color: $red;
+  cursor: pointer;
+  
 }
