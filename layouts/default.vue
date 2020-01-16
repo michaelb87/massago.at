@@ -9,17 +9,20 @@
       <nuxt />
     </section>
     <footer-bar />
+    <CallbackWidget />
   </div>
 </template>
 
 <script>
 import Navbar from "~/components/Navbar.vue";
 import FooterBar from "~/components/FooterBar.vue" ;
+import CallbackWidget from "~/components/CallbackWidget.vue";
 
 export default {
   components: {
     Navbar,
-    FooterBar
+    FooterBar,
+    CallbackWidget
   }
 };
 </script>

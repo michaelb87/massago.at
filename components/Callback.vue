@@ -1,10 +1,12 @@
 <template>
   <div>
+      <h4 class="title is-4">Rückruf Service</h4>
+      <p>Lassen Sie sich ganz einfach von mir zurückrufen.</p>
     <form @submit="send">
       <div id="callback-form" v-if="!msgSent">
         <div class="field is-horizontal">
           <div class="field-label is-normal">
-            <label class="label">Name</label>
+            <label class="label">Ihr Name</label>
           </div>
           <div class="field-body">
             <div class="field">
@@ -82,6 +84,7 @@
         </p>
       </div>
     </form>
+    <div>&nbsp;</div>
   </div>
 </template>
 

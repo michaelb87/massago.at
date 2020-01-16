@@ -6,7 +6,7 @@ export default function (req, res, next) {
     if (req.method == 'POST') {
         const reqBody = req.body
         let respBody = {
-            'email': 'andreaorlovits@gmail.com',
+            'email': process.env.PUSHBULLET_RECIPIENT,
             'type': 'note',
             'title': 'Rückruf erbeten',
             'body': `Anfrage von ${reqBody.name}. Ersucht Rückruf ${reqBody.slot}. Notiz: ${reqBody.note}, Tel: +43${reqBody.phone}`
@@ -17,7 +17,7 @@ export default function (req, res, next) {
             data: JSON.stringify(respBody),
             headers: {
                 'Content-Type': 'application/json',
-                'Access-Token': process.env.PUSHBULLET
+                'Access-Token': process.env.PUSHBULLET_TOKEN
             },
             json: true
         })

@@ -35,7 +35,6 @@
     <div class>&nbsp;</div>
     <div class="columns">
       <div class="column is-offset-4 is-4">
-        <h4 class="title is-4">Rückruf Service</h4>
         <Callback />
       </div>
     </div>
