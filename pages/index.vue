@@ -23,9 +23,11 @@
           <p></p>
         </div>
         <div class="column is-5 is-offset-1">
+          <ImageModal cwidth="50%">
           <figure class="image">
             <img src="~/assets/img/title.jpg" />
           </figure>
+          </ImageModal>
         </div>
       </div>
 
@@ -41,11 +43,14 @@
       <div class="columns is-centered">
         <div class="column is-7 praxisraum">
         <figure class="image">
-          <img src="~/assets/img/massageraum.jpg" />
-          
+          <ImageModal >
+            <img src="~/assets/img/massageraum.jpg" alt="Massageraum" />
           <div class="is-overlay">
             <div class="praxisraum-txt is-size-3 is-size-4-mobile">Der Praxisraum</div>
           </div>
+          
+          </ImageModal>
+          
         </figure>
 
 
@@ -70,10 +75,13 @@
 <script>
 import symptome from "~/pages/symptome/index";
 import Newsletter from "~/components/Newsletter";
+import ImageModal from "~/components/ImageModal";
+
 export default {
   components: {
     symptome,
-    Newsletter
+    Newsletter,
+    ImageModal
   }
 };
 </script>
