@@ -53,6 +53,10 @@ module.exports = {
     'nuxt-google-maps-module',
     '@bazzite/nuxt-optimized-images',
     '@nuxtjs/sitemap',
+    // '@netsells/nuxt-hotjar', { 
+    //   id: process.env.HOTJAR_HJID, 
+    //   sv: process.env.HOTJAR_HJSV,
+    // }
   ],
   /*
   ** Axios module configuration
