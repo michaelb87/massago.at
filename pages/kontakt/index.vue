@@ -10,13 +10,15 @@
           <a href="tel:06776-3153-743">06776 3153 743</a>
         </p>
         <p class="is-size-5">
-          E-mail:
+          E-Mail:
           <a href="mailto:andreaorlovits@gmail.com">andreaorlovits@gmail.com</a>
         </p>
         <p>&nbsp;</p>
         <p>Termine nach telefonischer Vereinbarung.</p>
-        <p>Sollten Sie mich nicht erreichen, bin ich möglicherweise gerade bei einer Therapie.</p>
-        <p>Gerne können Sie mir Ihren Terminwunsch auch via E-Mail senden.</p>
+        <p>Sollten Sie mich nicht erreichen, bin ich möglicherweise gerade bei einer Therapie.
+          Nutzen Sie am Einfachsten den untenstehenden <i>Rückruf Service</i>.
+        </p>
+        <p>Gerne können Sie mir Ihren Terminwunsch auch via <i>E-Mail</i> senden.</p>
       </div>
       <div class="column">
         <figure class="image">
@@ -33,6 +35,7 @@
     <div class>&nbsp;</div>
     <div class="columns">
       <div class="column is-offset-4 is-4">
+        <h4 class="title is-4">Rückruf Service</h4>
         <Callback />
       </div>
     </div>

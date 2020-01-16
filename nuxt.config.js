@@ -37,6 +37,7 @@ module.exports = {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/dotenv',
   ],
   /*
   ** Nuxt.js modules
@@ -45,6 +46,7 @@ module.exports = {
     // Doc: https://github.com/nuxt-community/modules/tree/master/packages/bulma
     //'@nuxtjs/bulma',
     // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     'nuxt-google-maps-module',
     '@bazzite/nuxt-optimized-images',
@@ -114,5 +116,11 @@ module.exports = {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
     timing: false
-  }
+  },
+  serverMiddleware: [
+    {
+      path: 'api/callback',
+      handler: '~/api/callback.js'
+    }
+  ]
 }

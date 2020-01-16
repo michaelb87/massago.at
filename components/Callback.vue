@@ -1,67 +1,87 @@
 <template>
-  <div id="callback-form">
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Name</label>
-      </div>
-      <div class="field-body">
-        <div class="field">
-          <p class="control is-expanded has-icons-left">
-            <input class="input" type="text" placeholder="Name" id="cb-name" />
-            <span class="icon is-small is-left">
-              <i class="fa fa-user"></i>
-            </span>
-          </p>
+  <div>
+    <form @submit="send">
+      <div id="callback-form" v-if="!msgSent">
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Name</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded has-icons-left">
+                <input class="input" type="text" placeholder="Name" v-model="name" />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-user"></i>
+                </span>
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Telefon</label>
-      </div>
-      <div class="field-body">
-        <div class="field is-expanded">
-          <div class="field has-addons">
-            <p class="control">
-              <a class="button is-static">+43</a>
-            </p>
-            <p class="control is-expanded">
-              <input class="input" type="tel" placeholder="Ihre Telefonnummer" id="cb-telephone" />
-            </p>
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Telefon</label>
+          </div>
+          <div class="field-body">
+            <div class="field is-expanded">
+              <div class="field has-addons">
+                <p class="control">
+                  <a class="button is-static">+43</a>
+                </p>
+                <p class="control is-expanded">
+                  <input class="input" type="tel" placeholder="Ihre Telefonnummer" v-model="phone" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Wann darf ich Sie zurückrufen?</label>
+          <div class="control">
+            <div class="list is-hoverable">
+              <a
+                v-for="d in days"
+                :key="d.id"
+                @click="selectSlot(d)"
+                :class="{'list-item': true, 'is-active': d.id === selected_id}"
+              >{{d.day}}, {{d.prefix}} {{d.slot}}</a>
+              <a
+                class="list-item"
+                v-on:click="renderDaysCnt=Math.min(renderDaysCnt+3,20)"
+              >... zeige mehr Optionen</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-horizontal">
+          <div class="field-label is-normal">
+            <label class="label">Anmerkung</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <p class="control is-expanded">
+                <input class="input" type="text" placeholder v-model="note" />
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="field is-grouped is-pulled-right">
+          <div class="control">
+            <button type="submit" class="button is-link">Anfrage Senden</button>
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="field">
-      <label class="label">Wann darf ich Sie zurückrufen?</label>
-      <div class="control">
-        <div class="list is-hoverable">
-          <a class="list-item" v-for="d in days" :key="d.id">{{d.day}}, {{d.prefix}} {{d.slot}}</a>
-          <a class="list-item">... zeige mehr Optionen</a>
-        </div>
+      <div class="content" v-if="msgSent">
+        <h4 class="title is-4">Nachricht gesendet!</h4>
+        <p>Ich rufe sie {{selected_text}} zurück.</p>
+        <p v-if="note.length > 0">
+          <strong>Ihre Nachricht:</strong>
+          {{note}}
+        </p>
       </div>
-    </div>
-
-    <div class="field is-horizontal">
-      <div class="field-label is-normal">
-        <label class="label">Anmerkung</label>
-      </div>
-      <div class="field-body">
-        <div class="field">
-          <p class="control is-expanded">
-            <input class="input" type="text" placeholder id="cb-anmerkung" />
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="field is-grouped is-pulled-right">
-      <div class="control">
-        <button class="button is-link" id="anfrage-senden-btn">Anfrage Senden</button>
-      </div>
-    </div>
+    </form>
   </div>
 </template>
 
@@ -69,7 +89,12 @@
 export default {
   data: () => {
     return {
-      days: [],
+      selected_id: null,
+      selected_text: "",
+      name: "",
+      phone: "",
+      note: "",
+      msgSent: false,
       renderDaysCnt: 3,
       periodDefinitions: {
         Morgen: { from: 0, to: 9, prefix: "am " },
@@ -103,11 +128,12 @@ export default {
       }
     };
   },
-  methods: {
-    getTimes: function() {
+  computed: {
+    days: function() {
       const today = new Date();
       let cnt = 0;
       let td = today.getDay();
+      let result = [];
       while (cnt < this.renderDaysCnt) {
         let day = this.availableTimes[td];
         // iterate over times of day
@@ -118,11 +144,13 @@ export default {
             let isPassed =
               td === today.getDay() && period.to <= today.getHours();
             if (!isPassed) {
-              this.days.push({
-                id: `${day}-${slot}`,
+              let id = `${day.day}-${slot}`;
+              result.push({
+                id: id,
                 day: today.getDay() !== td ? day.day : "Heute",
                 prefix: period.prefix,
-                slot: slot
+                slot: slot,
+                selected: this.selected == id
               });
               cnt++;
             }
@@ -131,10 +159,24 @@ export default {
 
         td = td == 5 ? 1 : td + 1;
       }
+      return result;
     }
   },
-  mounted: function() {
-    this.getTimes();
+  methods: {
+    selectSlot: function(elem) {
+      this.selected_id = elem.id;
+      this.selected_text = `${elem.day} ${elem.prefix} ${elem.slot}`;
+    },
+    send: function(e) {
+      e.preventDefault();
+      this.$axios.$post("/api/callback", {
+        name: this.name,
+        phone: this.phone,
+        note: this.note,
+        slot: this.selected_text
+      });
+      this.msgSent = true;
+    }
   }
 };
 </script>
