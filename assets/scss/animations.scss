@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes appear50 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 50%;
+    }
+  }
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;

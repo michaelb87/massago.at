@@ -1,8 +1,8 @@
 <template>
   <div class="container section">
     <div class="column">
-      <h1 class="title">Andrea Orlovits</h1>
-      <h2 class="subtitle">Heilmasseurin</h2>
+      <h4 class="title is-4">Andrea Orlovits</h4>
+      <h4 class="subtitle is-4">Heilmasseurin</h4>
       <div></div>
     </div>
     <div>

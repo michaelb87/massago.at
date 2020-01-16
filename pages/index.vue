@@ -36,7 +36,21 @@
         <p>&nbsp;</p>
         <symptome v-bind:embedded="true" padding="12%" v-bind:showMore="true" :elementsPerRow="5" />
       </div>
+      <div class="is-divider"></div>
 
+      <div class="columns is-centered">
+        <div class="column is-7 praxisraum">
+        <figure class="image">
+          <img src="~/assets/img/massageraum.jpg" />
+          
+          <div class="is-overlay">
+            <div class="praxisraum-txt is-size-3 is-size-4-mobile">Der Praxisraum</div>
+          </div>
+        </figure>
+
+
+        </div>
+      </div>
     </div>
 
     <section class="hero is-primary is-bold">
@@ -64,5 +78,6 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+
 </style>

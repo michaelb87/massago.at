@@ -12,3 +12,17 @@
 .page-enter, .page-leave-to {
   opacity: 0;
 }
+
+/* massage page */
+
+.praxisraum {
+  padding-top: 1.5rem !important;
+}
+
+.praxisraum-txt{
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+  font-weight: 200;
+  color: $light;
+}
