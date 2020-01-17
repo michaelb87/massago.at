@@ -8,6 +8,14 @@ export const state = () => ({
         }
     },
     from: null,
+    selectedVouchers: [
+        {id: 1,
+        data: {
+            from: 'Michael',
+            to: 'Andrea',
+            message: 'Foobar',
+        }}
+    ]
 })
 
 export const mutations = {
