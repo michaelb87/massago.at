@@ -182,7 +182,7 @@
 import DynamicComponentModal from "~/components/DynamicComponentModal";
 export default {
   components: {
-    DynamicComponentModal
+    DynamicComponentModal,
   },
   head() {
     return {

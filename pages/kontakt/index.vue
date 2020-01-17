@@ -19,7 +19,7 @@
           Nutzen Sie am Einfachsten den untenstehenden <a href="#callback" class="reverse-link">Rückruf Service</a>.
         </p>
         <p>Gerne können Sie mir Ihren Terminwunsch auch via <a href="mailto:andreaorlovits@gmail.com?subject=Terminanfrage" class="reverse-link">Email</a> senden.</p>
-        <p><strong>Öffnungszeiten:</strong> Montag bis Freitag 9 - 21 Uhr</p>
+        <p><i>Öffnungszeiten:</i> Montag bis Freitag 9 - 21 Uhr</p>
       </div>
       <div class="column">
         <figure class="image">

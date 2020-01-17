@@ -1,4 +1,4 @@
-if (process.client) {
+if (process.client && process.env.NODE_ENV === 'production') {
     (function (h, o, t, j, a, r) {
         h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
         h._hjSettings = { hjid: 1350523, hjsv: 6 };

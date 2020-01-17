@@ -53,7 +53,8 @@ export default {
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
         { text: "Kassen", mobileText: "Kassen / Preise", path: "/kassen" },
-        { text: "Kontakt", path: "/kontakt" }
+        { text: "Gutscheine", path: "/gutscheine" },
+        { text: "Kontakt", path: "/kontakt" },
       ],
       isActive: false,
     };
