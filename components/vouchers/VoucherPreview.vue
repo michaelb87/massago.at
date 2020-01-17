@@ -11,12 +11,12 @@
     <div class="columns is-mobile">
       <a
         class="button"
-        :class="{'is-light': selectedSide === 'back' , }"
+        :class="{'is-light': selectedSide === 'back' , 'is-small': smallButtons}"
         @click="selectedSide='front'"
       >Voderseite</a>
       <a
         class="button"
-        :class="{'is-light': selectedSide === 'front' , }"
+        :class="{'is-light': selectedSide === 'front' , 'is-small': smallButtons}"
         @click="selectedSide='back'"
       >Rückseite</a>
     </div>
@@ -26,7 +26,15 @@
 <script>
 import ImageModal from "~/components/ImageModal.vue";
 export default {
-  props: ["voucher"],
+  props: {
+      voucher: {
+          type: Object
+      },
+      smallButtons: {
+          type: Boolean,
+          default: false
+      }
+  },
   components: {
     ImageModal
   },

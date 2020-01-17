@@ -48,7 +48,6 @@ export default {
       this.isActive = false;
     },
     openModal() {
-      console.log('clicked')
       this.isActive = true;
       this.dynamic = () => import(`@/components/${this.component}.vue`);
     }
