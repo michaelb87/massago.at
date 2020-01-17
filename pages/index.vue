@@ -11,22 +11,22 @@
             <i>nur 8 Minuten von Steyr entfernt</i>.
           </p>
           <p class="has-text-justified">
-            Der Praxisraum befindet sich im
-            <a
-              href="http://www.vitalogikum.at"
-              target="blank"
-              class="has-text-dark"
-            >Vitalogikum</a> im ersten Stock.
-            Falls Sie noch nicht hier waren, finden Sie unter
-            <nuxt-link to="/kontakt" no-prefetch>Kontakt</nuxt-link>einen Routenplaner.
+            <span>Mein Praxisraum befindet sich im</span>
+            <a href="http://www.vitalogikum.at" target="blank" class="has-text-dark">Vitalogikum</a>
+            <span>
+              im ersten Stock.
+              Falls Sie noch nicht hier waren, finden Sie unter
+            </span>
+            <nuxt-link to="/kontakt" no-prefetch>Kontakt</nuxt-link>
+            <span>einen Routenplaner.</span>
           </p>
           <p></p>
         </div>
         <div class="column is-5 is-offset-1">
           <ImageModal cwidth="50%">
-          <figure class="image">
-            <img src="~/assets/img/title.jpg" />
-          </figure>
+            <figure class="image">
+              <img src="~/assets/img/title.jpg" />
+            </figure>
           </ImageModal>
         </div>
       </div>
@@ -42,18 +42,14 @@
 
       <div class="columns is-centered">
         <div class="column is-7 praxisraum">
-        <figure class="image">
-          <ImageModal >
-            <img src="~/assets/img/massageraum.jpg" alt="Massageraum" />
-          <div class="is-overlay">
-            <div class="praxisraum-txt is-size-3 is-size-4-mobile">Der Praxisraum</div>
-          </div>
-          
-          </ImageModal>
-          
-        </figure>
-
-
+          <figure class="image">
+            <ImageModal>
+              <img src="~/assets/img/massageraum.jpg" alt="Massageraum" />
+              <div class="is-overlay">
+                <div class="praxisraum-txt is-size-3 is-size-4-mobile">Der Praxisraum</div>
+              </div>
+            </ImageModal>
+          </figure>
         </div>
       </div>
     </div>
@@ -87,5 +83,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

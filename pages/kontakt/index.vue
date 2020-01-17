@@ -16,9 +16,10 @@
         <p>&nbsp;</p>
         <p>Termine nach telefonischer Vereinbarung.</p>
         <p>Sollten Sie mich nicht erreichen, bin ich möglicherweise gerade bei einer Therapie.
-          Nutzen Sie am Einfachsten den untenstehenden <i>Rückruf Service</i>.
+          Nutzen Sie am Einfachsten den untenstehenden <a href="#callback" class="reverse-link">Rückruf Service</a>.
         </p>
-        <p>Gerne können Sie mir Ihren Terminwunsch auch via <i>E-Mail</i> senden.</p>
+        <p>Gerne können Sie mir Ihren Terminwunsch auch via <a href="mailto:andreaorlovits@gmail.com?subject=Terminanfrage" class="reverse-link">Email</a> senden.</p>
+        <p><strong>Öffnungszeiten:</strong> Montag bis Freitag 9 - 21 Uhr</p>
       </div>
       <div class="column">
         <figure class="image">
@@ -34,7 +35,7 @@
     </div>
     <div class>&nbsp;</div>
     <div class="columns">
-      <div class="column is-offset-4 is-4">
+      <div class="column is-offset-4 is-4" id="callback">
         <Callback />
       </div>
     </div>

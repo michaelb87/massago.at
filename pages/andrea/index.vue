@@ -107,7 +107,9 @@
                   <span class="tag skill is-light">
                     <nuxt-link no-prefetch to="/therapien/triggerpunkt">Triggerpunkt Therapie</nuxt-link>
                   </span>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/taping">Taping</nuxt-link></span>
+                  <span class="tag skill is-light">
+                    <nuxt-link no-prefetch to="/therapien/taping">Taping</nuxt-link>
+                  </span>
                   <span class="tag skill is-light">Sportmasseurin</span>
                   <span class="tag skill is-light">Dorn und Breuss</span>
                   <span class="tag skill is-light">Marnitz Therapie</span>
@@ -131,11 +133,24 @@
                   >Dr. Kienbacher Ausbildungszentrum</a>, Wien
                 </p>
                 <div>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/klassische_massage">Klassische Massage</nuxt-link></span>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/lymphdrainage">Lymphdrainage</nuxt-link></span>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/fussreflexzonenmassage">Fußreflexzonenmassage</nuxt-link></span>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/triggerpunkt">Bindegewebsmassage</nuxt-link></span>
-                  <span class="tag skill is-light"><nuxt-link no-prefetch to="/therapien/triggerpunkt">Segmentzonenmassage</nuxt-link></span>
+                  <span class="tag skill is-light">
+                    <nuxt-link no-prefetch to="/therapien/klassische_massage">Klassische Massage</nuxt-link>
+                  </span>
+                  <span class="tag skill is-light">
+                    <nuxt-link no-prefetch to="/therapien/lymphdrainage">Lymphdrainage</nuxt-link>
+                  </span>
+                  <span class="tag skill is-light">
+                    <nuxt-link
+                      no-prefetch
+                      to="/therapien/fussreflexzonenmassage"
+                    >Fußreflexzonenmassage</nuxt-link>
+                  </span>
+                  <span class="tag skill is-light">
+                    <nuxt-link no-prefetch to="/therapien/triggerpunkt">Bindegewebsmassage</nuxt-link>
+                  </span>
+                  <span class="tag skill is-light">
+                    <nuxt-link no-prefetch to="/therapien/triggerpunkt">Segmentzonenmassage</nuxt-link>
+                  </span>
                   <span class="tag skill is-light">Akupunkturmassage</span>
                 </div>
               </div>
@@ -168,6 +183,18 @@ import DynamicComponentModal from "~/components/DynamicComponentModal";
 export default {
   components: {
     DynamicComponentModal
+  },
+  head() {
+    return {
+      title: "Über mich",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: "Meine Qualifikationen und Ausbildungen als Masseurin"
+        }
+      ]
+    };
   }
 };
 </script>
@@ -179,8 +206,8 @@ export default {
 .timeline-link:hover {
   font-weight: 500;
 }
-.timeline-item:hover .timeline-marker{
-  background-color: hsl(171, 100%, 41%)!important;
+.timeline-item:hover .timeline-marker {
+  background-color: hsl(171, 100%, 41%) !important;
   animation: 0.6s appear;
 }
 </style>

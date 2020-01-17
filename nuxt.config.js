@@ -10,7 +10,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Schmerzen müssen nicht sein! Heilmassage jetzt neu im Vitalogikum in Aschach an der Steyr' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
