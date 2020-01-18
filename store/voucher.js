@@ -26,7 +26,7 @@ export const state = () => ({
                 from: 'Michael',
                 to: 'Andrea',
                 tarif_id: 1,
-                message: 'Foobar',
+                message: 'This is a test message. Wishing you the best my dear! ',
             }
         }
     ]

@@ -140,6 +140,9 @@ export default {
       let td = today.getDay();
       let result = [];
       while (cnt < this.renderDaysCnt) {
+        if(td >= 6) {
+          td=1
+        }
         let day = this.availableTimes[td];
         // iterate over times of day
         for (let a = 0; a < day.available.length; a++) {

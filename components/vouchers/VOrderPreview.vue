@@ -1,29 +1,33 @@
 <template>
-  <div class="columns box">
-    <div class="column">
-      <VoucherPreview :voucher="voucher" :small-buttons="true" />
-    </div>
-    <div class="column content">
-      <p>
-        <strong>Für:</strong>
-        {{svoucher.data.to}}
-        <button
-          class="delete is-pulled-right has-background-danger"
-          @click="deleteSelected"
-        ></button>
-      </p>
-      <p>
-        <strong>Von:</strong>
-        {{svoucher.data.from}}
-      </p>
-      <p>
-        <strong>Wert:</strong>
-        {{tarifs[svoucher.data.tarif_id].minutes}} Minuten ({{tarifs[svoucher.data.tarif_id].price}} €)
-      </p>
-      <p>
-        <strong>Nachricht:</strong>
-        {{svoucher.data.message}}
-      </p>
+  <div class="vorder-container">
+    <div class="columns box">
+      <span class="close-btn">
+        <button class="delete has-background-danger is-pulled-right" @click="deleteSelected"></button>
+        <div class="close-btn-label">
+            <span class="tag is-warning">Löschen</span>
+        </div>
+      </span>
+      <div class="column">
+        <VoucherPreview :voucher="voucher" :small-buttons="true" />
+      </div>
+      <div class="column content">
+        <p>
+          <strong>Für:</strong>
+          {{svoucher.data.to}}
+        </p>
+        <p>
+          <strong>Von:</strong>
+          {{svoucher.data.from}}
+        </p>
+        <p>
+          <strong>Wert:</strong>
+          {{tarifs[svoucher.data.tarif_id].minutes}} Minuten ({{tarifs[svoucher.data.tarif_id].price}} €)
+        </p>
+        <p>
+          <strong>Nachricht:</strong>
+          {{svoucher.data.message}}
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -52,4 +56,32 @@ export default {
 </script>
 
 <style scoped>
+.vorder-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .close-btn {
+    right: 0rem;
+    top: 1rem;
+  }
+}
+
+.close-btn-label {
+  display: none;
+  position: relative;
+  top: -0.25rem;
+  right: 0.5rem;
+  animation: 0.4s fadeInRight;
+}
+
+.close-btn:hover > .close-btn-label {
+  display: inline-block;
+}
 </style>

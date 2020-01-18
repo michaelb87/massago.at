@@ -3,7 +3,9 @@
     <div class="columns">
       <div class="column">
         <ImageModal cwidth="60%">
-          <img :src="`${voucher[selectedSide]}`" :alt="voucher.name" />
+          <transition name="fade" mode="out-in">
+            <img :src="`${voucher[selectedSide]}`" :alt="voucher.name" :key="selectedSide" />
+          </transition>
         </ImageModal>
       </div>
     </div>
@@ -27,13 +29,13 @@
 import ImageModal from "~/components/ImageModal.vue";
 export default {
   props: {
-      voucher: {
-          type: Object
-      },
-      smallButtons: {
-          type: Boolean,
-          default: false
-      }
+    voucher: {
+      type: Object
+    },
+    smallButtons: {
+      type: Boolean,
+      default: false
+    }
   },
   components: {
     ImageModal
@@ -45,3 +47,15 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.fade-enter-active {
+  transition: all .15s ease;
+}
+.fade-leave-active {
+  transition: all .15s ease;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+</style>
