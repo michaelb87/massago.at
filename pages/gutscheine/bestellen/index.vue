@@ -17,14 +17,19 @@
               <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Ihr Name" />
+                  <input class="input" v-model="rname" type="text" placeholder="Ihr Vor- und Nachname" />
                 </div>
               </div>
 
               <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="email" placeholder="Ihre E-Mail Adresse" />
+                  <input
+                    class="input"
+                    v-model="remail"
+                    type="email"
+                    placeholder="Ihre E-Mail Adresse"
+                  />
                   <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                   </span>
@@ -34,7 +39,13 @@
               <div class="field">
                 <label class="label">Telefon</label>
                 <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="tel" name="phone" placeholder="Ihre Telefonnummer" />
+                  <input
+                    class="input"
+                    v-model="rtel"
+                    type="tel"
+                    name="phone"
+                    placeholder="Ihre Telefonnummer"
+                  />
                   <span class="icon is-small is-left">
                     <i class="fa fa-phone"></i>
                   </span>
@@ -44,7 +55,7 @@
               <div class="field">
                 <label class="label">Adresse</label>
                 <div class="control">
-                  <textarea class="textarea" placeholder="Ihre Adresse"></textarea>
+                  <textarea class="textarea" v-model="raddr" placeholder="Ihre Adresse"></textarea>
                 </div>
               </div>
 
@@ -54,9 +65,23 @@
               <div class="field">
                 <div class="control">
                   <label class="checkbox">
-                    <input type="checkbox" />
+                    <input type="checkbox" v-model="v_rec_same" />
                     Selbe Adresse wie Rechnungsempfänger
                   </label>
+                </div>
+              </div>
+
+              <div class="field" v-if="!v_rec_same">
+                <label class="label">Empfänger Name</label>
+                <div class="control">
+                  <input class="input" v-model="vname" type="text" placeholder="Vor- und Nachname" />
+                </div>
+              </div>
+
+              <div class="field" v-if="!v_rec_same">
+                <label class="label">Empfänger Adresse</label>
+                <div class="control">
+                  <textarea class="textarea" v-model="vaddr" placeholder="Adresse des Gutschein Empfängers"></textarea>
                 </div>
               </div>
 
@@ -78,6 +103,17 @@ import VOrderPreview from "~/components/vouchers/VOrderPreview.vue";
 export default {
   components: {
     VOrderPreview
+  },
+  data: function() {
+    return {
+      rname: "",
+      remail: "",
+      rtel: "",
+      raddr: "",
+      v_rec_same: true,
+      vname: "",
+      vaddr: ""
+    };
   },
   computed: {
     selectedVouchers() {
