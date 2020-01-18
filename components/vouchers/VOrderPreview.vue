@@ -4,7 +4,7 @@
       <span class="close-btn">
         <button class="delete has-background-danger is-pulled-right" @click="deleteSelected"></button>
         <div class="close-btn-label">
-            <span class="tag is-warning">Löschen</span>
+          <span class="tag is-warning">Löschen</span>
         </div>
       </span>
       <div class="column">
@@ -83,5 +83,8 @@ export default {
 
 .close-btn:hover > .close-btn-label {
   display: inline-block;
+}
+.vorder-container .columns {
+  margin-top: 0 !important;
 }
 </style>

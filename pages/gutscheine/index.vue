@@ -67,9 +67,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-    .no-margin-top .column .columns{
-        margin-top: 0 !important;
-    }
-</style>
