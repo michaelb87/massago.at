@@ -64,7 +64,7 @@
               </div>
             </div>
 
-            <div class="field is-grouped">
+            <div class="field is-grouped is-grouped-multiline">
               <div class="control">
                 <button class="button is-link" @click="addOrder" data-action="order">Zur Bestellung</button>
               </div>

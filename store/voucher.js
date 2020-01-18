@@ -19,16 +19,16 @@ export const state = () => ({
     },
     from: null,
     selectedVouchers: [
-        {
-            id: Math.random(),
-            voucherId: 1,
-            data: {
-                from: 'Michael',
-                to: 'Andrea',
-                tarif_id: 1,
-                message: 'This is a test message. Wishing you the best my dear! ',
-            }
-        }
+        // {
+        //     id: Math.random(),
+        //     voucherId: 1,
+        //     data: {
+        //         from: 'Michael',
+        //         to: 'Andrea',
+        //         tarif_id: 1,
+        //         message: 'This is a test message. Wishing you the best my dear! ',
+        //     }
+        // }
     ]
 })
 
