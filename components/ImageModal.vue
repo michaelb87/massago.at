@@ -1,6 +1,6 @@
 <template>
   <div @keydown.esc="isActive=false" tabindex="0">
-    <div @click="isActive = true">
+    <div @click="isActive = true" :class="{'pointer-cursor': pointer}">
       <slot />
     </div>
     <div class="modal is-active img-modal" v-if="isActive">
@@ -27,6 +27,10 @@ export default {
       // defines modal content width
       type: String,
       default: "65%"
+    },
+    pointer: {
+      type: Boolean,
+      default: true
     }
   },
   mixins: [clickaway, MobileHelper],

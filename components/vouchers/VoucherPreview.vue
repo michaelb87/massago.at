@@ -2,10 +2,8 @@
   <div>
     <div class="columns">
       <div class="column">
-        <ImageModal cwidth="60%">
-          <transition name="fade" mode="out-in">
+        <ImageModal cwidth="60%" >
             <img :src="`${voucher[selectedSide]}`" :alt="voucher.name" :key="selectedSide" />
-          </transition>
         </ImageModal>
       </div>
     </div>
@@ -14,12 +12,12 @@
       <a
         class="button"
         :class="{'is-light': selectedSide === 'back' , 'is-small': smallButtons}"
-        @click="selectedSide='front'"
+        @click="selectSide('front')"
       >Voderseite</a>
       <a
         class="button"
         :class="{'is-light': selectedSide === 'front' , 'is-small': smallButtons}"
-        @click="selectedSide='back'"
+        @click="selectSide('back')"
       >Rückseite</a>
     </div>
   </div>
@@ -27,6 +25,7 @@
 
 <script>
 import ImageModal from "~/components/ImageModal.vue";
+let self;
 export default {
   props: {
     voucher: {
@@ -40,22 +39,22 @@ export default {
   components: {
     ImageModal
   },
+  created: function() {
+    self = this;
+  },
   data: () => {
     return {
       selectedSide: "front"
     };
+  },
+  methods: {
+    selectSide(side) {
+      this.selectedSide = side;
+    }
   }
 };
 </script>
 
 <style scoped>
-.fade-enter-active {
-  transition: all .15s ease;
-}
-.fade-leave-active {
-  transition: all .15s ease;
-}
-.fade-enter, .fade-leave-to {
-  opacity: 0;
-}
+
 </style>

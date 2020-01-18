@@ -36,7 +36,7 @@
                 :to="`/gutscheine/konfigurieren/${id}`"
                 no-prefetch
                 class="button is-info"
-              >Personalisieren</nuxt-link>
+              >Gutschein personalisieren</nuxt-link>
             </p>
           </div>
           <div class="column is-7">
