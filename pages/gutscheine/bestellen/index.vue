@@ -22,7 +22,7 @@
               &nbsp;
             </div>
 
-            <form class="form" @submit="placeOrder" v-if="!orderSuccess">
+            <form class="form" @submit="checkForm" v-if="!orderSuccess">
               <h5 class="title is-5">Rechnungsempfänger</h5>
               <div class="field">
                 <label class="label">Name</label>
@@ -106,16 +106,21 @@
 
               <div class="field is-grouped">
                 <div class="control">
-                  <button class="button is-link">Bestellen</button>
+                  <button class="button is-link" :disabled="orderPending">Bestellen</button>
                 </div>
               </div>
-            <div class="notification is-danger" v-if="orderError">
-              <p>Bei Ihrer Bestellung ist ein technischer Fehler aufgetreten.</p>
-              <p>Bitte rufen Sie mich doch einfach an oder schreiben mir eine E-Mail mit den Gutschein Informationen</p>
-            </div>
+              <div class="notification is-danger" v-if="errors.length > 0">
+                <p v-for="(err, idx) in errors" :key="idx">{{err}}</p>
+              </div>
+              <div class="notification is-danger" v-if="orderError">
+                <p>Bei Ihrer Bestellung ist ein technischer Fehler aufgetreten.</p>
+                <p>Bitte rufen Sie mich doch einfach an oder schreiben mir eine E-Mail mit den Gutschein Informationen</p>
+              </div>
             </form>
             <div class="notification is-success" v-if="orderSuccess">
-              <p><strong>Bestellung erhalten</strong></p>
+              <p>
+                <strong>Bestellung erhalten</strong>
+              </p>
               <p>Herzlichen Dank für Ihre Bestellung!</p>
               <p>Ich sende Ihnen als Nächstes meine Kontonummer und Ihre Rechnung via E-Mail an {{email_addr}}.</p>
               <p>Dies ist kann bis zu einen Tag dauern.</p>
@@ -139,7 +144,9 @@ function defaultData() {
     vname: "",
     vaddr: "",
     orderError: false,
-    orderSuccess: false
+    orderSuccess: false,
+    orderPending: false,
+    errors: []
   };
 }
 
@@ -160,8 +167,7 @@ export default {
   },
   methods: {
     placeOrder(e) {
-      e.preventDefault();
-
+      this.orderPending = true;
       this.$axios
         .$post("/api/voucher", {
           rname: this.rname,
@@ -177,16 +183,42 @@ export default {
         .then(() => {
           this.$store.commit("voucher/resetCart");
           let initialData = defaultData();
-          initialData = {...initialData, email_addr: this.remail, orderSuccess: true}
+          initialData = {
+            ...initialData,
+            email_addr: this.remail,
+            orderSuccess: true
+          };
           // Iterate through the props
           for (let prop in initialData) {
-              // Reset the prop locally.
+            // Reset the prop locally.
             this[prop] = initialData[prop];
           }
         })
         .catch(() => {
           this.orderError = true;
         });
+    },
+    checkForm(e) {
+      e.preventDefault();
+      this.errors = [];
+      if (this.rname.length < 4) {
+        this.errors.push("Bitte geben Sie ihren Namen an.");
+      }
+      if (this.remail.length == 0) {
+        this.errors.push("Bitte geben Sie ihre E-Mail Adresse an.");
+      } else if (this.remail.length < 4) {
+        this.errors.push("Bitte geben Sie eine korrekte E-Mail Adresse an.");
+      }
+      if (this.rtel.length < 6) {
+        this.errors.push("Bitte geben Sie eine korrekte Telefonnummer an.");
+      }
+      if (this.raddr.length < 10) {
+        this.errors.push("Bitte geben Sie ihre Adresse an.");
+      }
+
+      if (this.errors.length == 0 && !this.orderPending) {
+        this.placeOrder(e);
+      }
     }
   }
 };
