@@ -3,7 +3,7 @@
     <!-- <div class="pre-head has-text-centered has-background-grey-lighter"><span>
       Heilmassage Andrea Orlovits  -  Saaßstraße 66 - 4421 Aschach / Steyr
       </span>
-      </div> -->
+    </div>-->
     <navbar />
     <section class="site-content">
       <nuxt />
@@ -15,7 +15,7 @@
 
 <script>
 import Navbar from "~/components/Navbar.vue";
-import FooterBar from "~/components/FooterBar.vue" ;
+import FooterBar from "~/components/FooterBar.vue";
 import CallbackWidget from "~/components/CallbackWidget.vue";
 
 export default {
@@ -23,8 +23,6 @@ export default {
     Navbar,
     FooterBar,
     CallbackWidget
-  }, mounted: function() {
-    console.log('>>>', process.env.PUSHBULLET_RECIPIENT)
   }
 };
 </script>
