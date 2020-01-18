@@ -1,5 +1,5 @@
 <template>
-  <div @keydown.esc="isActive=false" tabindex="0">
+  <div @keydown.esc="isActive=false" tabindex="0" class="img-modal-container">
     <div @click="isActive = true" :class="{'pointer-cursor': pointer}">
       <slot />
     </div>
@@ -51,5 +51,8 @@ export default {
 <style scoped>
 .img-modal {
   animation: 0.3s appear;
+}
+.img-modal-container:focus {
+    outline-width: 0 !important;
 }
 </style>
