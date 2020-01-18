@@ -12,12 +12,25 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="box">
+            <div>
+              <span class="is-pulled-right">
+                <span class="is-size-4">Gesamtsumme:</span>
+                <span class="is-size-4 has-text-black"><u>{{cartSum}} Euro</u></span>
+              </span>
+              &nbsp;
+            </div>
+
             <form class="form">
               <h5 class="title is-5">Rechnungsempfänger</h5>
               <div class="field">
                 <label class="label">Name</label>
                 <div class="control">
-                  <input class="input" v-model="rname" type="text" placeholder="Ihr Vor- und Nachname" />
+                  <input
+                    class="input"
+                    v-model="rname"
+                    type="text"
+                    placeholder="Ihr Vor- und Nachname"
+                  />
                 </div>
               </div>
 
@@ -81,7 +94,11 @@
               <div class="field" v-if="!v_rec_same">
                 <label class="label">Empfänger Adresse</label>
                 <div class="control">
-                  <textarea class="textarea" v-model="vaddr" placeholder="Adresse des Gutschein Empfängers"></textarea>
+                  <textarea
+                    class="textarea"
+                    v-model="vaddr"
+                    placeholder="Adresse des Gutschein Empfängers"
+                  ></textarea>
                 </div>
               </div>
 
@@ -100,6 +117,7 @@
 
 <script>
 import VOrderPreview from "~/components/vouchers/VOrderPreview.vue";
+
 export default {
   components: {
     VOrderPreview
@@ -118,7 +136,13 @@ export default {
   computed: {
     selectedVouchers() {
       return this.$store.state.voucher.selectedVouchers;
+    },
+    cartSum() {
+      return this.$store.state.voucher.selectedVouchers.reduce((prev, cur) => {
+        return prev + this.$store.state.voucher.tarifs[cur.data.tarif_id].price;
+      }, 0);
     }
-  }
+  },
+  methods: {}
 };
 </script>

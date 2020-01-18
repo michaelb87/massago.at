@@ -41,5 +41,5 @@ export const mutations = {
     },
     deleteSelectedVoucher(state, svourcher) {
         state.selectedVouchers.splice(state.selectedVouchers.indexOf(svourcher), 1)
-    },
+    }
 }
