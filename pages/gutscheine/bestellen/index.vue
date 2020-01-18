@@ -12,7 +12,7 @@
       <div class="columns is-centered">
         <div class="column is-8">
           <div class="box">
-            <div>
+            <div v-if="!orderSuccess">
               <span class="is-pulled-right">
                 <span class="is-size-4">Gesamtsumme:</span>
                 <span class="is-size-4 has-text-black">
@@ -22,7 +22,7 @@
               &nbsp;
             </div>
 
-            <form class="form" @submit="placeOrder">
+            <form class="form" @submit="placeOrder" v-if="!orderSuccess">
               <h5 class="title is-5">Rechnungsempfänger</h5>
               <div class="field">
                 <label class="label">Name</label>
@@ -109,7 +109,17 @@
                   <button class="button is-link">Bestellen</button>
                 </div>
               </div>
+            <div class="notification is-danger" v-if="orderError">
+              <p>Bei Ihrer Bestellung ist ein technischer Fehler aufgetreten.</p>
+              <p>Bitte rufen Sie mich doch einfach an oder schreiben mir eine E-Mail mit den Gutschein Informationen</p>
+            </div>
             </form>
+            <div class="notification is-success" v-if="orderSuccess">
+              <p><strong>Bestellung erhalten</strong></p>
+              <p>Herzlichen Dank für Ihre Bestellung!</p>
+              <p>Ich sende Ihnen als Nächstes meine Kontonummer und Ihre Rechnung via E-Mail an {{email_addr}}.</p>
+              <p>Dies ist kann bis zu einen Tag dauern.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,7 +137,9 @@ function defaultData() {
     raddr: "",
     v_rec_same: true,
     vname: "",
-    vaddr: ""
+    vaddr: "",
+    orderError: false,
+    orderSuccess: false
   };
 }
 
@@ -163,13 +175,17 @@ export default {
           total_amount: this.cartSum
         })
         .then(() => {
-            this.$store.commit("voucher/resetCart")
-            let initialData = defaultData();
-            // Iterate through the props
-            for (let prop in initialData) {
-                // Reset the prop locally.
-                this[prop] = initialData[prop];
-            }
+          this.$store.commit("voucher/resetCart");
+          let initialData = defaultData();
+          initialData = {...initialData, email_addr: this.remail, orderSuccess: true}
+          // Iterate through the props
+          for (let prop in initialData) {
+              // Reset the prop locally.
+            this[prop] = initialData[prop];
+          }
+        })
+        .catch(() => {
+          this.orderError = true;
         });
     }
   }

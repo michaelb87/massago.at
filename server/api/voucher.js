@@ -19,6 +19,7 @@ const transporter = nodemailer.createTransport({
 export default function (req, res, next) {
     if (req.method == 'POST') {
         const reqBody = req.body
+        logger.info({type: 'voucher_received', payload: reqBody})
 
         const voucherDetails = () => {
             return reqBody.vouchers.map((v) => {
@@ -58,17 +59,19 @@ export default function (req, res, next) {
             subject: 'Gutscheinbestellung erhalten :)',
             text: msg
         }
-        //res.send(msg)
         transporter.sendMail(mailOptions, function (error, info) {
             if (error) {
-                logger.error({ type: 'voucher_error', payload: reqBody })
+                logger.error({ type: 'voucher_email_error', payload: reqBody })
+                res.status(400).send(JSON.stringify({
+                    status: 'error'
+                }))
             } else {
-
-
                 logger.info({ type: 'voucher_info', 'msg': 'email sent' })
+                res.send(JSON.stringify({
+                    status: 'success'
+                }))
             }
         })
-        res.send('email gesendet!')
 
     } else {
 
