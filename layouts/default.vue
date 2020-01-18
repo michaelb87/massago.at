@@ -23,6 +23,8 @@ export default {
     Navbar,
     FooterBar,
     CallbackWidget
+  }, mounted: function() {
+    console.log('>>>', process.env.PUSHBULLET_RECIPIENT)
   }
 };
 </script>

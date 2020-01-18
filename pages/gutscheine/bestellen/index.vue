@@ -15,12 +15,14 @@
             <div>
               <span class="is-pulled-right">
                 <span class="is-size-4">Gesamtsumme:</span>
-                <span class="is-size-4 has-text-black"><u>{{cartSum}} Euro</u></span>
+                <span class="is-size-4 has-text-black">
+                  <u>{{cartSum}} Euro</u>
+                </span>
               </span>
               &nbsp;
             </div>
 
-            <form class="form">
+            <form class="form" @submit="placeOrder">
               <h5 class="title is-5">Rechnungsempfänger</h5>
               <div class="field">
                 <label class="label">Name</label>
@@ -117,22 +119,23 @@
 
 <script>
 import VOrderPreview from "~/components/vouchers/VOrderPreview.vue";
+function defaultData() {
+  return {
+    rname: "",
+    remail: "",
+    rtel: "",
+    raddr: "",
+    v_rec_same: true,
+    vname: "",
+    vaddr: ""
+  };
+}
 
 export default {
   components: {
     VOrderPreview
   },
-  data: function() {
-    return {
-      rname: "",
-      remail: "",
-      rtel: "",
-      raddr: "",
-      v_rec_same: true,
-      vname: "",
-      vaddr: ""
-    };
-  },
+  data: defaultData,
   computed: {
     selectedVouchers() {
       return this.$store.state.voucher.selectedVouchers;
@@ -143,6 +146,32 @@ export default {
       }, 0);
     }
   },
-  methods: {}
+  methods: {
+    placeOrder(e) {
+      e.preventDefault();
+
+      this.$axios
+        .$post("/api/voucher", {
+          rname: this.rname,
+          remail: this.remail,
+          rtel: this.rtel,
+          raddr: this.raddr,
+          v_rec_same: this.v_rec_same,
+          vname: this.vname,
+          vaddr: this.vaddr,
+          vouchers: this.$store.state.voucher.selectedVouchers,
+          total_amount: this.cartSum
+        })
+        .then(() => {
+            this.$store.commit("voucher/resetCart")
+            let initialData = defaultData();
+            // Iterate through the props
+            for (let prop in initialData) {
+                // Reset the prop locally.
+                this[prop] = initialData[prop];
+            }
+        });
+    }
+  }
 };
 </script>

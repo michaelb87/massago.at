@@ -124,6 +124,10 @@ module.exports = {
     {
       path: 'api/callback',
       handler: '~/server/api/callback.js'
+    },
+    {
+      path: 'api/voucher',
+      handler: '~/server/api/voucher.js'
     }
   ]
 }

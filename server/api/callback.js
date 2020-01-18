@@ -1,8 +1,8 @@
-
 const axios = require('axios');
+const { loggers } = require('winston')
+const logger = loggers.get('main')
 
 export default function (req, res, next) {
-    const reqBody = req.body
     if (req.method == 'POST') {
         const reqBody = req.body
         let respBody = {
@@ -22,13 +22,15 @@ export default function (req, res, next) {
             json: true
         })
             .then(resp => {
-                // todo log
+                logger.info({type: 'pushbullet', payload: respBody})
                 res.send(JSON.stringify({ 'success': true }))
             }).catch(resp => {
+                logger.error({type: 'pushbullet', payload: resp})
                 res.send(JSON.stringify({ 'success': false }))
             });
 
     } else {
         res.send('admin notified')
     }
+    next()
 }

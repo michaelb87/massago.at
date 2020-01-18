@@ -23,10 +23,12 @@
     "express": "^4.16.4",
     "font-awesome": "^4.7.0",
     "moment": "^2.24.0",
+    "nodemailer": "^6.4.2",
     "nuxt": "^2.0.0",
     "nuxt-google-maps-module": "^1.6.0",
     "vue-clickaway": "^2.2.2",
-    "vue-parallaxy": "^1.1.1"
+    "vue-parallaxy": "^1.1.1",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "^0.3.0",
