@@ -4,7 +4,7 @@
       <span class="close-btn">
         <button class="delete has-background-danger is-pulled-right" @click="deleteSelected"></button>
         <div class="close-btn-label">
-          <span class="tag is-warning">Löschen</span>
+          <span class="tag is-warning" @click="deleteSelected">Löschen</span>
         </div>
       </span>
       <div class="column">

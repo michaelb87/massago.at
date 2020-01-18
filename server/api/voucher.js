@@ -55,7 +55,7 @@ export default function (req, res, next) {
 
         const mailOptions = {
             from: process.env.MAIL_USERNAME,
-            to: 'mb@michaelb.at',
+            to: process.env.MAIL_TO,
             subject: 'Gutscheinbestellung erhalten :)',
             text: msg
         }

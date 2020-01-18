@@ -3,8 +3,8 @@ export const defaultState = () => {
         vouchers: {
             1: {
                 name: 'Klassisch',
-                front: '../images/gutscheine/classic_front.jpg',
-                back: '../images/gutscheine/classic_back.jpg',
+                front: '/images/gutscheine/classic_front.jpg',
+                back: '/images/gutscheine/classic_back.jpg',
                 description: 'Ein klassischer Gutschein, passend für jeden Anlass. Hinterlassen Sie dem Beschenkten doch einfach eine persönliche Nachricht!',
             }
         },
@@ -20,16 +20,16 @@ export const defaultState = () => {
         },
         from: null,
         selectedVouchers: [
-            {
-                id: Math.random(),
-                voucherId: 1,
-                data: {
-                    from: 'Michael',
-                    to: 'Andrea',
-                    tarif_id: 1,
-                    message: 'This is a test message. Wishing you the best my dear! ',
-                }
-            }
+            // {
+            //     id: Math.random(),
+            //     voucherId: 1,
+            //     data: {
+            //         from: 'Michael',
+            //         to: 'Andrea',
+            //         tarif_id: 1,
+            //         message: 'This is a test message. Wishing you the best my dear! ',
+            //     }
+            // }
         ]
     }
 }
