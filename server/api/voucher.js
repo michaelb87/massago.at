@@ -19,7 +19,7 @@ const transporter = nodemailer.createTransport({
 export default function (req, res, next) {
     if (req.method == 'POST') {
         const reqBody = req.body
-        logger.info({type: 'voucher_received', payload: reqBody})
+        logger.info({ type: 'voucher_received', payload: reqBody })
 
         const voucherDetails = () => {
             return reqBody.vouchers.map((v) => {
@@ -42,7 +42,7 @@ export default function (req, res, next) {
         Telefon: ${reqBody.rtel}
         Rechnungsempfänger Adresse: 
         ${reqBody.raddr}
-        An selbe Adresse senden: ${reqBody.v_rec_same? 'ja': 'nein, andere'}
+        An selbe Adresse senden: ${reqBody.v_rec_same ? 'ja' : 'nein, andere'}
         Gutscheinempfänger Name: ${reqBody.vname}
         Gutscheinempfänger Adresse: 
         ${reqBody.vaddr}
@@ -74,7 +74,6 @@ export default function (req, res, next) {
         })
 
     } else {
-
-        res.send('get not supported. admin notified')
+        res.send('admin notified')
     }
 }

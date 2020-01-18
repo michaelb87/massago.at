@@ -11,7 +11,7 @@
             Gerne können Sie den Gutschein auch direkt an die beschenkte Person senden lassen.
             Hinterlassen Sie doch auch ein paar nette Worte und ich übertrage ihre Nachricht.
           </p>
-          <p>Natürlich können Sie den Gutschein auch zu sich schicken lassen und persönlich übergeben</p>
+          <p>Natürlich können Sie den Gutschein auch zu sich schicken lassen und persönlich übergeben.</p>
           <p>&nbsp;</p>
           <p>
             <nuxt-link to="/gutscheine" class="is-pulled-right">Zurück</nuxt-link>

@@ -113,7 +113,8 @@
                 <p v-for="(err, idx) in errors" :key="idx">{{err}}</p>
               </div>
               <div class="notification is-danger" v-if="orderError">
-                <p>Bei Ihrer Bestellung ist ein technischer Fehler aufgetreten.</p>
+                <p>Ohje!</p>
+                <p>Entschuldidung, bei Ihrer Bestellung ist ein technischer Fehler aufgetreten.</p>
                 <p>Bitte rufen Sie mich doch einfach an oder schreiben mir eine E-Mail mit den Gutschein Informationen</p>
               </div>
             </form>
