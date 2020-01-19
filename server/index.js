@@ -1,9 +1,11 @@
 const express = require('express')
+cors = require('cors')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser');
 
 const app = express()
+
 const port = 3501
 const dotenv = require('dotenv')
 dotenv.config() // load .env
@@ -22,6 +24,8 @@ loggers.add('main', {
     new transports.File({ filename: process.env.LOGFILE })
   ]
 })
+
+app.options('*', cors())
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
