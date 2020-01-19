@@ -32,5 +32,4 @@ export default function (req, res, next) {
     } else {
         res.send('admin notified')
     }
-    next()
 }
