@@ -24,7 +24,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'https://github.com/michaelb87/massago.at.git',
       path : '/var/www/massago-at',
-      'post-deploy' : 'yarn install && yarn build && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'yarn --cwd source install && yarn --cwd source build && pm2 reload ecosystem.config.js --env production'
     }
   }
 };
