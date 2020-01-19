@@ -1,11 +1,9 @@
 const express = require('express')
-cors = require('cors')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser');
 
 const app = express()
-
 const port = 3501
 const dotenv = require('dotenv')
 dotenv.config() // load .env
@@ -25,19 +23,8 @@ loggers.add('main', {
   ]
 })
 
-app.options('*', cors())
-
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-
-const allowCrossDomain = function(req, res, next) {
-  res.header('Access-Control-Allow-Origin', "*");
-  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type');
-  next();
-};
-
-app.use(allowCrossDomain);
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')

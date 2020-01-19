@@ -122,6 +122,9 @@ module.exports = {
     host: '0.0.0.0', // default: localhost,
     timing: false
   },
+  env: {
+    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  },
   serverMiddleware: [
     {
       path: 'api/callback',
