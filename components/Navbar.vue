@@ -52,7 +52,7 @@ export default {
         { text: "Start", path: "/" },
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
-        { text: "Kassen", mobileText: "Kassen / Preise", path: "/kassen" },
+        { text: "Preise / Kassen", mobileText: "Preise / Kassen", path: "/kassen" },
         { text: "Gutscheine", path: "/gutscheine" },
         { text: "Kontakt", path: "/kontakt" },
       ],

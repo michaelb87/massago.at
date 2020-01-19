@@ -76,6 +76,8 @@ module.exports = {
       '/symptome',
       '/therapien',
       '/impressum',
+      '/gutscheine/konfigurieren',
+      '/gutscheine/bestellen',
     ],
     routes: [
       '/symptome/rueckenschmerzen',

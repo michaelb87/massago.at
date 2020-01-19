@@ -29,6 +29,7 @@ export default function (req, res, next) {
                 Wert: ${state.tarifs[v.data.tarif_id].price} Euro
                 Nachricht:
                 ${v.data.message}
+                
                 `
             })
         }

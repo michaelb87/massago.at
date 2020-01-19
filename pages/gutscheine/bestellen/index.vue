@@ -1,11 +1,14 @@
 <template>
   <div class="section">
     <div class="container">
+        <h4 class="title is-4">Gutscheine Bestellen</h4>
       <div>
         <div v-for="selectedVoucher in selectedVouchers" :key="selectedVoucher.id">
           <VOrderPreview :svoucher="selectedVoucher" />
         </div>
       </div>
+      <div>&nbsp;</div>
+      <div><nuxt-link to="/gutscheine" class="is-pulled-right">weiteren Gutschein konfigurieren</nuxt-link></div>
       <div>&nbsp;</div>
       <div>&nbsp;</div>
 
@@ -124,7 +127,7 @@
               </p>
               <p>Herzlichen Dank für Ihre Bestellung!</p>
               <p>Ich sende Ihnen als Nächstes meine Kontonummer und Ihre Rechnung via E-Mail an {{email_addr}}.</p>
-              <p>Dies ist kann bis zu einen Tag dauern.</p>
+              <p>Dies kann bis zu einen Tag dauern.</p>
             </div>
           </div>
         </div>
