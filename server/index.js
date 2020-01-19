@@ -2,20 +2,19 @@ const express = require('express')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser');
-const { format, loggers, transports } = require('winston')
 
 const app = express()
 const port = 3501
 const dotenv = require('dotenv')
 dotenv.config() // load .env
 
-const path = require('path');
-const serverEnvPath = path.resolve(process.cwd(), `.env.server`);
+
 dotenv.config({
-  path: serverEnvPath,
+  path: require('find-config')('.env.server'),
 });
 
 
+const { format, loggers, transports } = require('winston')
 loggers.add('main', {
   format: format.json(),
   transports: [
