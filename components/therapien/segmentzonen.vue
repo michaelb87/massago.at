@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Segmentzonenmassage</h4>
+    <h1 class="title is-4">Segmentzonenmassage</h1>
 
     <p>
       Durch die

@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Taping</h4>
+    <h1 class="title is-4">Taping</h1>
 
     <p>
       Beim

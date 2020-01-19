@@ -1,7 +1,7 @@
 <template>
 
       <div class="column">
-        <h4 class="title is-4 center-on-mobile">Cervikalsyndrom</h4>
+        <h1 class="title is-4 center-on-mobile">Cervikalsyndrom</h1>
         <div class="sfloating-img">
           <figure class="image">
             <img src="/images/symptome/cervikalsyndrom.jpg" />

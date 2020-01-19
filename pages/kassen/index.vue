@@ -8,7 +8,7 @@
               <div class="box column is-6 has-text-centered">
                 <div class="columns">
                   <div class="column is-4 m-top-auto m-top-bottom-auto">
-                    <h4 class="title is-4">Preise</h4>
+                    <h1 class="title is-4">Preise</h1>
                   </div>
                   <div class="column is-6">
                     <p>30 Minuten Behandlungsdauer - 40 Euro</p>
@@ -24,7 +24,7 @@
     </section>
     <div class="container section">
       <div class="content">
-        <h4 class="title is-4">Kostenrückerstattung</h4>
+        <h1 class="title is-4">Kostenrückerstattung</h1>
         <p>
           Sie können Ihre Rechnung auch bei Ihrer Krankenkasse einreichen um einen Teil der Kosten rückerstattet zu bekommen.
           Dabei ist die Höhe des Betrags von Krankenkasse zu Krankenkasse unterschiedlich.

@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Klassische Massage</h4>
+    <h1 class="title is-4">Klassische Massage</h1>
     <p>
       Bei der
       <i>klassischen Massage</i> werden Verspannungen in der Muskulatur gelöst.

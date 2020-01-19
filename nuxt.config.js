@@ -7,9 +7,13 @@ module.exports = {
   */
   head: {
     title: 'Heilmassage Massago',
+    htmlAttrs: {
+      lang: 'de-at'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'keyword', name: 'keyword', content: 'Massage,Steyr,Verspannungen,Rückenschmerzen,Nackenschmerzen' },
       { hid: 'description', name: 'description', content: 'Schmerzen müssen nicht sein! Heilmassage jetzt neu im Vitalogikum in Aschach an der Steyr' }
     ],
     link: [

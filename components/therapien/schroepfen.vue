@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Schröpfmassage</h4>
+    <h1 class="title is-4">Schröpfmassage</h1>
 
     <p>Beim Schröpfen wird mit Hilfe von kleinen gläsernen Saugglocken ein Unterdruck auf der gesunden eingeölten Haut erzeugt.</p>
     <p>

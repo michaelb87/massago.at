@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="title is-4 center-on-mobile">Haltungsbedingte Verspannungen</h4>
+    <h1 class="title is-4 center-on-mobile">Haltungsbedingte Verspannungen</h1>
     <div class="sfloating-img">
       <figure class="image">
         <img src="/images/symptome/haltungsbedingte_verspannungen.jpg" />

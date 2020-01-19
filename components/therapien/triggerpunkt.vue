@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Triggerpunkt Therapie</h4>
+    <h1 class="title is-4">Triggerpunkt Therapie</h1>
 
     <p>
       Ein myofaszialer Triggerpunkt ist eine

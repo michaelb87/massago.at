@@ -5,7 +5,7 @@
         <h4 class="is-4 title">Zeit für Massage</h4>
         <p>
           Unser Körper besteht aus 640 verschiedenen Muskeln die
-          <i>Verspannungen</i> hervorufen können, wenn wir uns
+          Verspannungen hervorufen können, wenn wir uns
           <strong>zu wenig</strong> oder
           <strong>falsch bewegen</strong>. Verspannungen sind Verhärtungen im Muskelgewebe, wenn sich die zwei Botenstoffe
           <i>Myosin</i> und
@@ -19,7 +19,7 @@
     </div>
 
     <div class="container section">
-      <h4 class="title is-4">Therapien</h4>
+      <h1 class="title is-4">Therapien</h1>
       <div>
         <p>Beim Ersttermin werden wir gemeinsam bei einem Befundgespräch die passende Therapieform für Sie finden.</p>
         <p>Meistens besteht diese aus einer Kombination von mehreren Techniken.</p>

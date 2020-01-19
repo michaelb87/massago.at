@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Lymphdrainage</h4>
+    <h1 class="title is-4">Lymphdrainage</h1>
     <p>
       Die <i>Lymphdrainage</i> ist Teil der komplexen <i>physikalischen Entstauungstherapie</i>, sie ist eine sehr sanfte Therapieform,
       ihre Hauptwirkung ist die <strong>Linderung von Schwellungen</strong> (Ödemen).

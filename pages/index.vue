@@ -3,7 +3,7 @@
     <div class="container section">
       <div class="columns">
         <div class="column is-6 is-size-5 is-size-6-mobile">
-          <h3 class="title is-4">Herzlich Willkommen</h3>
+          <h1 class="title is-4">Herzlich Willkommen</h1>
           <p class="has-text-justified">Es freut mich Sie begrüßen zu dürfen!</p>
           <p class="has-text-justified">
             Massago ist eine auf Heilmassage spezialisierte Praxis

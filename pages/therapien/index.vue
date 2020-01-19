@@ -1,6 +1,6 @@
 <template>
   <div :class="{container: !embedded}">
-    <h4 class="title is-4" v-if="!embedded">Therapien</h4>
+    <h1 class="title is-4" v-if="!embedded">Therapien</h1>
     <div class="columns is-multiline">
       <div v-for="t in therapien" :key="t.id" class="column is-3">
         <nuxt-link no-prefetch :to="`/therapien/${t.id}`" class="reverse-link">

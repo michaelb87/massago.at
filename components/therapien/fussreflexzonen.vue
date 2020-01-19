@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <h4 class="title is-4">Fußreflexzonenmassage</h4>
+    <h1 class="title is-4">Fußreflexzonenmassage</h1>
 
     <p>
       Die

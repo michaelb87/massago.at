@@ -1,6 +1,6 @@
 <template>
   <div :class="{container: !embedded}">
-    <h4 class="title is-4" v-if="!embedded">Symptome</h4>
+    <h1 class="title is-4" v-if="!embedded">Symptome</h1>
     <div v-for="(sc, index) in symptome_chunks" :key="index">
       <div class="columns symptome is-centered">
         <div
