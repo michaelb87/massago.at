@@ -201,6 +201,7 @@ export default {
         })
         .catch(() => {
           this.orderError = true;
+          this.orderPending=false;
         });
     },
     checkForm(e) {
