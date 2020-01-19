@@ -10,12 +10,10 @@
     <p>
       Die Aufgaben des Lymphsystems sind
       <strong>Abtransport von Flüssigkeit und Partikeln</strong>
-      (
-      <i>Stoffwechselendprodukte, Zelltrümmer, Harnstoff, Eweißstoffe</i>), Abtransport von
+      <i>(Stoffwechselendprodukte, Zelltrümmer, Harnstoff, Eweißstoffe)</i>, Abtransport von
       <strong>Nahrungsfetten</strong> aus dem Darm,
       Transport von
-      <strong>Immunzellen</strong> (
-      <i>Leukozyten, Lymphozyten</i>) und Rückführung in den Blutkreislauf.
+      <strong>Immunzellen</strong> <i>(Leukozyten, Lymphozyten)</i> und Rückführung in den Blutkreislauf.
     </p>
     <p>
       In den Lymphgefäßen sind
@@ -65,8 +63,7 @@
     </p>
     <p>
       Bei der operativen Entfernung des Tumors bei einer Brustkrebspatientin werden oftmals Lymphknoten aus der Achsel entfernt.
-      Dies führt zu einer Störung im Lymphgefäßsystem und es kann zu einer chronischen Schwellung (
-      <i>sekundäres Lymphödem</i>)
+      Dies führt zu einer Störung im Lymphgefäßsystem und es kann zu einer chronischen Schwellung <i>(sekundäres Lymphödem)</i>
       des gesamten Armes auf der betroffenen Seite kommen.
     </p>
     <p>
