@@ -23,9 +23,9 @@
       <strong>Ausstrahlung</strong> in Hüfte und Bein, eventuell bis in die große Zehe.
     </p>
     <p>
-      Meist sind
-      <nuxt-link no-prefetch to="/symptome/haltungsbedingte_verspannungen">Haltungsfehler</nuxt-link>und
-      <nuxt-link no-prefetch to="/symptome/belastung">Fehl- oder Überbelastung</nuxt-link>Auslöser.
+      Meist sind 
+      <nuxt-link no-prefetch to="/symptome/haltungsbedingte_verspannungen">Haltungsfehler</nuxt-link> und
+      <nuxt-link no-prefetch to="/symptome/belastung">Fehl- oder Überbelastung</nuxt-link> Auslöser.
     </p>
     <p>Der ”Kreuzschmerz” kann aber sehr viele Ursachen haben:</p>
     <ul>
