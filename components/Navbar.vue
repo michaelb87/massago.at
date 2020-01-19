@@ -31,7 +31,13 @@
             v-for="entry in entries"
             :key="entry.text"
             :to="entry.path"
-          >{{isMobile && entry.mobileText ? entry.mobileText : entry.text}}</nuxt-link>
+          >
+            {{isMobile && entry.mobileText ? entry.mobileText : entry.text}}
+            <span
+              class="tag is-normal is-rounded is-info voucher-tag"
+              v-if="entry.path == '/gutscheine' && vouchersCnt > 0"
+            >{{vouchersCnt}}</span>
+          </nuxt-link>
         </div>
       </div>
     </div>
@@ -52,19 +58,32 @@ export default {
         { text: "Start", path: "/" },
         { text: "Massage", path: "/massage" },
         { text: "Über mich", path: "/andrea" },
-        { text: "Preise / Kassen", mobileText: "Preise / Kassen", path: "/kassen" },
+        {
+          text: "Preise / Kassen",
+          mobileText: "Preise / Kassen",
+          path: "/kassen"
+        },
         { text: "Gutscheine", path: "/gutscheine" },
-        { text: "Kontakt", path: "/kontakt" },
+        { text: "Kontakt", path: "/kontakt" }
       ],
-      isActive: false,
+      isActive: false
     };
   },
-  mixins: [MobileHelper]
+  mixins: [MobileHelper],
+  computed: {
+    vouchersCnt() {
+      return this.$store.state.voucher.selectedVouchers.length;
+    }
+  }
 };
 </script>
 
 <style scoped>
 .nuxt-link-active {
   color: #3273dc !important;
+}
+.voucher-tag {
+  margin-left: 5px;
+  animation: 0.5s appear;
 }
 </style>
