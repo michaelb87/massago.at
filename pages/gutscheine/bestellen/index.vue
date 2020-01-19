@@ -26,6 +26,7 @@
             </div>
 
             <form class="form" @submit="checkForm" v-if="!orderSuccess">
+              <div>&nbsp;</div>
               <h5 class="title is-5">Rechnungsempfänger</h5>
               <div class="field">
                 <label class="label">Name</label>
