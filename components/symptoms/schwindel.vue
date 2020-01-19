@@ -33,10 +33,8 @@
     <p>
       Beim
       <strong>nicht-vestibulären Schwindel</strong> liegt die Ursache
-      <strong>nicht</strong> in den Sinnesorganen oder dem Gehirn selbst, sonder in anderen Körperregionen.
-    </p>
-    <p>
-      <strong>Zum Beispiel</strong>:
+      nicht in den Sinnesorganen oder dem Gehirn selbst, sonder in anderen Körperregionen.
+      <i>Zum Beispiel:</i> 
       <nuxt-link no-prefetch to="/symptome/cervikalsyndrom">Cervikalsyndrom</nuxt-link>, Muskelverspannungen, niedriger Blutdruck, Anämien, bei Herz- oder Gefäßerkrankungen.
     </p>
   </div>
