@@ -60,6 +60,7 @@ module.exports = {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: process.env.NODE_ENV === 'production' ? 'https://www.massago.at': 'http://localhost:3000'
   },
   maps: {
     key: process.env.GOOGLE_MAPS_KEY,
@@ -121,9 +122,6 @@ module.exports = {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
     timing: false
-  },
-  env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:3000'
   },
   serverMiddleware: [
     {
