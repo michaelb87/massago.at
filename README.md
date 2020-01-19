@@ -22,3 +22,14 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+## Deployment
+
+### Initial setup 
+`pm2 deploy ecosystem.config.js production setup`
+
+`copy .env and .env.server to /var/www/massago-at/source/`
+
+### deploy
+
+`pm2 deploy ecosystem.config.js production`
