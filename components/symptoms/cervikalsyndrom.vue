@@ -13,10 +13,10 @@
           <strong>Halswirbelsäule ausgehenden Beschwerden</strong>.
           Diese können entweder im Bereich der Halswirbelsäule selbst sein oder sich als
           <strong>Ausstrahlung im Kopfbereich</strong>,
-          oder in den oberen Extremitäten (Schulter, Arme, Hände) manifestieren.
+          oder in den <strong>oberen Extremitäten</strong> (Schulter, Arme, Hände) manifestieren.
         </p>
         <p>
-          Die Ursache ist meist eine muskuläre Über-und Fehlbelastung. Arthrosen, Schleudertrauma, Bandscheibenvorfälle und Blockierungen in
+          Die Ursache ist meist eine muskuläre <nuxt-link no-prefetch to="/symptome/belastung">Über- und Fehlbelastung</nuxt-link>. Arthrosen, Schleudertrauma, Bandscheibenvorfälle und Blockierungen in
           der Halswirbelsäule können weitere Ursachen sein.
         </p>
         <p>

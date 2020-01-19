@@ -23,7 +23,7 @@
       <strong>Ausstrahlung</strong> in Hüfte und Bein, eventuell bis in die große Zehe.
     </p>
     <p>
-      Meist sind sind
+      Meist sind
       <nuxt-link no-prefetch to="/symptome/haltungsbedingte_verspannungen">Haltungsfehler</nuxt-link>und
       <nuxt-link no-prefetch to="/symptome/belastung">Fehl- oder Überbelastung</nuxt-link>Auslöser.
     </p>

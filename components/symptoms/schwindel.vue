@@ -16,11 +16,17 @@
       Bei Bewegung des Körpers, bewegt sich auch die Flüssigkeit und Reizt die Sinneszellen in den Wänden.
     </p>
     <p>
-      Augen informieren das Gehirn über die Raumlage.
-      <i>Rezeptoren</i> in Muskeln, Bänder und Gelenke teilen dem Kleinhirn mit wenn beispielweise das Knie Schwankungen ausgleichen muss.
+      Unsere
+      <i>Augen</i> informieren das Gehirn über die Raumlage.
     </p>
     <p>
-      Wenn das Gehirn von genannten Sinnesorganen widersprüchliche Informationen bekommt, oder das Gehirn Signale nicht richtig verarbeiten kann,
+      Rezeptoren in
+      <i>Muskeln</i>,
+      <i>Bänder</i> und
+      <i>Gelenke</i> teilen dem Kleinhirn mit, wenn beispielweise das Knie Schwankungen ausgleichen muss.
+    </p>
+    <p>
+      Wenn das Gehirn von genannten Sinnesorganen widersprüchliche Informationen erhält, oder das Gehirn Signale nicht richtig verarbeiten kann,
       kann es zum
       <strong>Vestibulären Schwindel</strong> kommen.
     </p>

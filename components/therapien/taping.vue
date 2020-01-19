@@ -11,19 +11,31 @@
       <i>Blut- und Lymphsystem</i> Einfluss genommen.
     </p>
     <p>Die Wirkung ist je nach Anlagetechnik unterschiedlich.</p>
-    <p>
+    <p class="is-marginless">
       Bei der
-      <i>Muskeltechnik</i> wird der Muskel
-      detonisiert, die
+      <i>Muskeltechnik</i>
+      wird der Muskel
+      detonisiert und wirkt damit entspanned auf die Muskulatur.
+    </p>
+    <p class="is-marginless">
+      Die
       <i>Spacetechnik</i> dient zur lokalen strukturellen
-      Entlastung und mit der
-      <i>Fascientechnik</i> wird auf fasciale Strukturen Einfluss genommen.
+      Entlastung und kann punktuell Schmerzen lindern.
+    </p>
+    <p class="is-marginless">
+      Bei der
+      <i>Lymphtechnik</i> wird der Abtransport von Lymphflüssigkeit verbessert und Schwellungen werden verringert.
+      Sie eignet sich auch sehr gut zur Unterstützung einer
+      <nuxt-link no-prefetch to="/therapien/lymphdrainage">Lymphdrainage</nuxt-link>.
+    </p>
+
+    <p>
       Die
       <i>Korrekturtechnik</i> kann gegen
       Haltungsschwächen und
-      Fehlstellungen wirken. Die
-      <i>Lymphtechnik</i> wird zur Unterstützung der
-      <nuxt-link no-prefetch to="/therapien/lymphdrainage">Lymphdrainage</nuxt-link> eingesetzt.
+      Fehlstellungen wirken und mit der
+      <i>Fascientechnik</i>
+ wird auf fasciale Strukturen Einfluss genommen.
     </p>
     <p>
       <u>Wo kann die Triggerpunktmassage helfen?</u>
