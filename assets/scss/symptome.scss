@@ -27,7 +27,7 @@
 }
 
 .symptom-overlay:hover {
-  animation: 0.3s appear50;
+  animation: 0.3s linear;
   opacity: 0.5;
   background-color: $black;
   color: $white;
