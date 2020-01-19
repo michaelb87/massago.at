@@ -51,7 +51,7 @@
         <p>Auch Privatversicherungen übernehmen häufig einen Teil der Kosten!</p>
         <p>Informieren Sie sich für nähere Details bei Ihrer Versicherung.</p>
         <p>&nbsp;</p>
-        <h5 class="title is-5">Rechnung einreichen - wie geht das?</h5>
+        <h5 class="title is-5">Rechnung einreichen - was brauche ich?</h5>
         <p>Beim Einreichen der Rechnung bei ihrer Krankenkasse benötigen sie folgende Unterlagen</p>
         <ul>
           <li>Ärztliche Überweisung</li>
