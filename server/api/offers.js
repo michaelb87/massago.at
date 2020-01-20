@@ -49,10 +49,6 @@ export default function (req, res, next) {
 
             }
         })
-
-        // TODO send email
-
-
     } else {
         if (req.query.add) {
             req.app.offers.insert({
