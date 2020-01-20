@@ -8,7 +8,8 @@ module.exports = {
   head: {
     title: 'Heilmassage Massago',
     htmlAttrs: {
-      lang: 'de-at'
+      lang: 'de-at',
+      class: 'has-navbar-fixed-top',
     },
     meta: [
       { charset: 'utf-8' },

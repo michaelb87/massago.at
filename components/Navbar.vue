@@ -1,5 +1,10 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar is-fixed-top"
+    :class="{ 'navbar--hidden': !showNavbar }"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="container disable_text_highlighting">
       <div class="navbar-brand">
         <nuxt-link to="/" class="navbar-item navbar-logo">
@@ -12,7 +17,7 @@
           aria-label="menu"
           aria-expanded="false"
           data-target="navbar"
-          v-on:click="isActive=!isActive"
+          v-on:click="isMobileActive=!isMobileActive"
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -20,19 +25,19 @@
         </a>
       </div>
 
-      <div id="navbar" class="navbar-menu" v-bind:class="{'is-active':isActive}">
+      <div id="navbar" class="navbar-menu" v-bind:class="{'is-active':isMobileActive}">
         <div class="navbar-start"></div>
         <div class="navbar-end">
           <nuxt-link
             no-prefetch
             exact
             class="navbar-item"
-            v-on:click.native="isActive=false"
+            v-on:click.native="isMobileActive=false"
             v-for="entry in entries"
             :key="entry.text"
             :to="entry.path"
           >
-            {{isMobile && entry.mobileText ? entry.mobileText : entry.text}}
+            {{entry.text}}
             <span
               class="tag is-normal is-rounded is-info voucher-tag"
               v-if="entry.path == '/gutscheine' && vouchersCnt > 0"
@@ -47,7 +52,6 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import colors from "bulma/sass/utilities/_all.sass";
-import MobileHelper from "~/mixins/MobileHelper";
 export default {
   components: {
     Logo
@@ -60,19 +64,40 @@ export default {
         { text: "Über mich", path: "/andrea" },
         {
           text: "Preise / Kassen",
-          mobileText: "Preise / Kassen",
           path: "/kassen"
         },
         { text: "Gutscheine", path: "/gutscheine" },
         { text: "Kontakt", path: "/kontakt" }
       ],
-      isActive: false
+      isMobileActive: false,
+      showNavbar: true,
+      lastScrollPosition: 0
     };
   },
-  mixins: [MobileHelper],
+  mixins: [],
   computed: {
     vouchersCnt() {
       return this.$store.state.voucher.selectedVouchers.length;
+    }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.onScroll);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll);
+  },
+  methods: {
+    onScroll() {
+      const currentScrollPosition =
+        window.pageYOffset || document.documentElement.scrollTop;
+      if (currentScrollPosition < 0) {
+        return;
+      }
+      if (Math.abs(currentScrollPosition - this.lastScrollPosition) < 60) {
+        return;
+      }
+      this.showNavbar = currentScrollPosition < this.lastScrollPosition;
+      this.lastScrollPosition = currentScrollPosition;
     }
   }
 };
@@ -85,5 +110,12 @@ export default {
 .voucher-tag {
   margin-left: 5px;
   animation: 0.5s appear;
+}
+.navbar {
+  transform: translate3d(0, 0, 0);
+}
+.navbar.navbar--hidden {
+  transform: translate3d(0, -100%, 0);
+  transition-duration: 0.5s;
 }
 </style>
