@@ -59,6 +59,7 @@ module.exports = {
     'nuxt-google-maps-module',
     '@bazzite/nuxt-optimized-images',
     '@nuxtjs/sitemap',
+    'nuxt-facebook-pixel-module',
   ],
   /*
   ** Axios module configuration
@@ -69,6 +70,12 @@ module.exports = {
   },
   maps: {
     key: process.env.GOOGLE_MAPS_KEY,
+  },
+  facebook: {
+    /* module options */
+    track: 'PageView',
+    pixelId: process.env.FACEBOOK_PIXEL_ID,
+    disabled: false
   },
   optimizedImages: {
     optimizeImages: true
