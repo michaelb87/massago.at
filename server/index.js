@@ -19,10 +19,23 @@ loggers.add('main', {
   format: format.json(),
   transports: [
     new transports.Console(),
-    new transports.File({ filename: process.env.LOGFILE })
+    new transports.File({
+      filename: process.env.LOGFILE,
+      format: format.combine(
+        format.timestamp({
+          format: 'YYYY-MM-DD hh:mm:ss A ZZ'
+        }),
+        format.json()
+      ),
+    })
   ]
 })
 
+const Datastore = require('nedb')
+const offers = new Datastore({ filename: 'data/offers.db', autoload: true });
+offers.ensureIndex({ fieldName: '_offer', unique: true }, function (err) {
+});
+app.offers = offers
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 

@@ -143,6 +143,10 @@ module.exports = {
     {
       path: 'api/voucher',
       handler: '~/server/api/voucher.js'
+    },
+    {
+      path: 'api/offers',
+      handler: '~/server/api/offers.js'
     }
   ]
 }
