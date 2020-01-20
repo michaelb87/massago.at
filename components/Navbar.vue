@@ -3,7 +3,7 @@
     class="navbar is-fixed-top"
     :class="{ 'navbar--hidden': !showNavbar }"
     role="navigation"
-    aria-label="main navigation"
+    aria-label="main navigation" v-on-clickaway="closeMobile"
   >
     <div class="container disable_text_highlighting">
       <div class="navbar-brand">
@@ -25,7 +25,11 @@
         </a>
       </div>
 
-      <div id="navbar" class="navbar-menu" v-bind:class="{'is-active':isMobileActive}">
+      <div
+        id="navbar"
+        class="navbar-menu"
+        v-bind:class="{'is-active':isMobileActive}"
+      >
         <div class="navbar-start"></div>
         <div class="navbar-end">
           <nuxt-link
@@ -52,6 +56,7 @@
 <script>
 import Logo from "~/components/Logo.vue";
 import colors from "bulma/sass/utilities/_all.sass";
+import { mixin as clickaway } from "vue-clickaway";
 export default {
   components: {
     Logo
@@ -74,7 +79,7 @@ export default {
       lastScrollPosition: 0
     };
   },
-  mixins: [],
+  mixins: [clickaway],
   computed: {
     vouchersCnt() {
       return this.$store.state.voucher.selectedVouchers.length;
@@ -98,6 +103,11 @@ export default {
       }
       this.showNavbar = currentScrollPosition < this.lastScrollPosition;
       this.lastScrollPosition = currentScrollPosition;
+    },
+    closeMobile() {
+      if(this.isMobileActive) {
+        this.isMobileActive=false
+      }
     }
   }
 };
