@@ -38,7 +38,7 @@
  wird auf fasciale Strukturen Einfluss genommen.
     </p>
     <p>
-      <u>Wo kann die Triggerpunktmassage helfen?</u>
+      <u>Wo kann Taping helfen?</u>
     </p>
 
     <ul>
@@ -46,7 +46,7 @@
         <nuxt-link no-prefetch to="/symptome/rueckenschmerzen">Rückenschmerzen</nuxt-link>
       </li>
       <li>
-        <nuxt-link no-prefetch to="/symptome/haltungsbedingte_verspannungen">Verspannungen</nuxt-link>
+        <nuxt-link no-prefetch to="/symptome/haltungsbedingte_verspannungen">Haltungsbedingte Verspannungen</nuxt-link>
       </li>
       <li>
         <nuxt-link no-prefetch to="/symptome/lymphoedem">Lymphödem</nuxt-link>
