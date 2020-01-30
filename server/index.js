@@ -3,6 +3,7 @@ const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 const bodyParser = require('body-parser');
 
+const cors = require('cors')
 const app = express()
 const port = 3501
 const dotenv = require('dotenv')
@@ -38,6 +39,8 @@ offers.ensureIndex({ fieldName: '_offer', unique: true }, function (err) {
 app.offers = offers
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
+
+app.use(cors())
 
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
