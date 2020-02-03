@@ -51,7 +51,7 @@
           <p>
             <strong>Benötige ich eine ärztliche Überweisung?</strong>
           </p>
-          <p>Sie können sowohl mit als auch ohne ärztliche Überweisung zu mir kommen.</p>
+          <p>Sie können sowohl mit als auch ohne ärztlicher Überweisung zu mir kommen.</p>
           <p>Sollten Sie einen medizinischen Hintergrund haben, bitte ich Sie eine Überweisung für eine Heilmassage von Ihrem Arzt mitzubringen.</p>
         </div>
       </div>
