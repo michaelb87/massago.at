@@ -41,15 +41,15 @@
         <div class="field">
           <label class="label">Wann darf ich Sie zurückrufen?</label>
           <div class="control">
-            <div class="list is-hoverable">
+            <div class="panel is-hoverable">
               <a
                 v-for="d in days"
                 :key="d.id"
                 @click="selectSlot(d)"
-                :class="{'list-item': true, 'is-active': d.id === selected_id}"
+                :class="{'panel-block': true, 'is-active': d.id === selected_id}"
               >{{d.day}}, {{d.prefix}} {{d.slot}}</a>
               <a
-                class="list-item"
+                class="panel-block"
                 v-on:click="renderDaysCnt=Math.min(renderDaysCnt+3,20)"
               >... zeige mehr Optionen</a>
             </div>
@@ -188,3 +188,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+  .panel-block.is-active{
+    color: #3273dc;
+    font-weight: 600;
+  }
+</style>
