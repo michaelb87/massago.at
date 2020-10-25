@@ -46,6 +46,7 @@ module.exports = {
   */
   buildModules: [
     '@nuxtjs/dotenv',
+    '@aceforth/nuxt-optimized-images',
   ],
   /*
   ** Nuxt.js modules
