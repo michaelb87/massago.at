@@ -27,7 +27,7 @@
     <div class="section">
       <div class="container">
         <!-- list of vouchers -->
-        <div v-for="(voucher, id) in vouchers" :key="id" class="columns">
+        <div v-for="(voucher, id, idx) in vouchers" :key="id" class="columns is-multiline">
           <div class="column is-5 content">
             <h4 class="is-4 title">{{voucher.name}}</h4>
             <p>{{voucher.description}}</p>
@@ -41,6 +41,9 @@
           </div>
           <div class="column is-7">
             <VoucherPreview :voucher="voucher" />
+          </div>
+          <div class="column is-full" v-if="idx != Object.keys(vouchers).length - 1"> 
+            <div class="is-divider"></div>
           </div>
         </div>
       </div>
