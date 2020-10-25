@@ -21,7 +21,7 @@
         </p>
         <p>
           Es wird zwischen zwei Arten unterschieden.
-          <br />Die folgenden Symptome sind bei jeden Menschen unterschiedlich Ausgeprägt bzw manche gar nicht vorhanden.
+          <br />Die folgenden Symptome sind bei jeden Menschen unterschiedlich ausgeprägt bzw manche gar nicht vorhanden.
         </p>
         <div>
           <div class="bullet">Oberes Cervikalsyndrom</div>

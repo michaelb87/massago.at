@@ -6,6 +6,18 @@ export const defaultState = () => {
                 front: '/images/gutscheine/classic_front.jpg',
                 back: '/images/gutscheine/classic_back.jpg',
                 description: 'Ein klassischer Gutschein, passend für jeden Anlass. Hinterlassen Sie dem Beschenkten doch einfach eine persönliche Nachricht!',
+            },
+            2: {
+                name: 'Von Herzen',
+                front: '/images/gutscheine/von_herzen_front.jpeg',
+                back: '/images/gutscheine/von_herzen_back.jpeg',
+                description: 'Der perfekte Gutschein um ihren Liebsten eine Freude zu machen.',
+            },
+            3: {
+                name: 'Winterlich',
+                front: '/images/gutscheine/winterlich_front.jpeg',
+                back: '/images/gutscheine/winterlich_back.jpeg',
+                description: 'Schenken Sie dieses Weihnachten doch einmal eine Massage. Den passenden Gutschein für kalte Wintermonate finden sie hier.',
             }
         },
         tarifs: {
