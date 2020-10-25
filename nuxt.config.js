@@ -58,7 +58,6 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/axios',
     'nuxt-google-maps-module',
-    '@bazzite/nuxt-optimized-images',
     '@nuxtjs/sitemap',
     'nuxt-facebook-pixel-module',
   ],
