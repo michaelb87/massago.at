@@ -22,14 +22,14 @@
           </p>
           <p>&nbsp;</p>
 
-          <article class="message is-info">
+          <!-- <article class="message is-info">
             <div class="message-header">
               <p>Info</p>
             </div>
             <div class="message-body">
               Ich bin vom <strong>10.9. bis 21.9.</strong> auf Urlaub. Sie können währenddessen Terminanfragen via E-Mail senden.
             </div>
-          </article>
+          </article> -->
         </div>
         <div class="column is-5 is-offset-1">
           <ImageModal cwidth="50%">
