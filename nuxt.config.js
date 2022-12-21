@@ -39,7 +39,7 @@ module.exports = {
   */
   plugins: [
     '~/plugins/route',
-    '~/plugins/hotjar',
+  //  '~/plugins/hotjar',
   ],
   /*
   ** Nuxt.js dev-modules
