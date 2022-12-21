@@ -11,9 +11,9 @@
                     <h1 class="title is-4">Preise</h1>
                   </div>
                   <div class="column is-6">
-                    <p>30 Minuten Behandlungsdauer - 40 Euro</p>
-                    <p>50 Minuten Behandlungsdauer - 60 Euro</p>
-                    <p>80 Minuten Behandlungsdauer - 90 Euro</p>
+                    <p>30 Minuten Behandlungsdauer - 50 Euro</p>
+                    <p>50 Minuten Behandlungsdauer - 70 Euro</p>
+                    <p>80 Minuten Behandlungsdauer - 100 Euro</p>
                   </div>
                 </div>
               </div>
