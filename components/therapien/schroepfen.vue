@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content wrap-hyphens">
     <h1 class="title is-4">Schröpfmassage</h1>
 
     <p>Beim Schröpfen wird mit Hilfe von kleinen gläsernen Saugglocken ein Unterdruck auf der gesunden eingeölten Haut erzeugt.</p>

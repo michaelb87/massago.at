@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content wrap-hyphens">
     <h1 class="title is-4">Segmentzonenmassage</h1>
 
     <p>

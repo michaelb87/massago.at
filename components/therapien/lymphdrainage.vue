@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content wrap-hyphens">
     <h1 class="title is-4">Lymphdrainage</h1>
     <p>
       Die <i>Lymphdrainage</i> ist Teil der komplexen <i>physikalischen Entstauungstherapie</i>, sie ist eine sehr sanfte Therapieform,

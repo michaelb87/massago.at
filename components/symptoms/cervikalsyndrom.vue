@@ -1,4 +1,4 @@
-<template>
+<template class="symptom-description">
 
       <div class="column">
         <h1 class="title is-4 center-on-mobile">Cervikalsyndrom</h1>

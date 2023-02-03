@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content wrap-hyphens">
     <h1 class="title is-4">Bindegewebsmassage</h1>
 
     <p>Bei der <i>Bindegewebsmassage</i> werden Haut-, Unterhaut und Faszientechniken zur Behandlung der Bindegewebszonen eingesetzt.</p>

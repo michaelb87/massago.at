@@ -1,4 +1,4 @@
-<template>
+<template class="symptom-description">
   <div>
     <h1 class="title is-4 center-on-mobile">Über- und Fehlbelastung</h1>
     <div class="sfloating-img">
