@@ -23,11 +23,11 @@ export const defaultState = () => {
         tarifs: {
             1: {
                 minutes: 50,
-                price: 60
+                price: 70
             },
             2: {
                 minutes: 80,
-                price: 90
+                price: 100
             }
         },
         from: null,
